@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PULSO — O pulso do seu negócio, todo dia às 8h</title>
+<title>PULSO — O pulso da sua clínica, todo dia às 8h</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -141,6 +141,7 @@
   .footer-logo { font-family: 'DM Serif Display', serif; font-size: 17px; letter-spacing: 4px; color: var(--verde); }
   .footer-copy { font-size: 12px; color: var(--fraco); }
 
+  @keyframes piscar { 0%,100%{opacity:1} 50%{opacity:0} }
   @keyframes fadeUp { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: translateY(0); } }
   @keyframes pulsar { 0%,100% { opacity: 1; } 50% { opacity: 0.4; } }
   @keyframes bounce { 0%,80%,100% { transform: scale(0); opacity: 0.3; } 40% { transform: scale(1); opacity: 1; } }
@@ -155,6 +156,7 @@
     .planos-bg, .section, .form-wrap { padding: 60px 20px; }
     .form-card { padding: 28px 20px; }
     footer { padding: 28px 20px; }
+    .depoimentos-grid, .seguranca-grid { grid-template-columns: 1fr !important; }
   }
 </style>
 </head>
@@ -162,7 +164,7 @@
 
 <nav>
   <div class="logo">PULSO</div>
-  <a href="#quero" class="nav-cta">Testar grátis</a>
+  <a href="https://go.hotmart.com/U105194608U?dp=1" target="_blank" class="nav-cta">Quero o PULSO</a>
 </nav>
 
 <!-- HERO -->
@@ -171,11 +173,10 @@
   <div class="hero-grid">
     <div>
       <div class="badge"><span class="badge-dot"></span> Inteligência para donos de negócio</div>
-      <h1>O <em>pulso</em> do seu negócio,<br>todo dia às 8h</h1>
+      <h1>O <em>pulso</em> da sua<br><span id="palavra-dinamica" style="color:var(--verde);font-style:italic"></span><span style="display:inline-block;width:3px;height:0.85em;background:var(--verde);margin-left:4px;vertical-align:middle;animation:piscar 1s step-end infinite" id="cursor-pisca"></span>,<br>todo dia às 8h</h1>
       <p class="hero-sub">Faturamento, agenda, inadimplência e o que fazer hoje — tudo no WhatsApp, sem abrir nenhum sistema. A IA que aprende seu negócio e te avisa antes do problema virar crise.</p>
       <div class="hero-ctas">
-        <a href="#quero" class="btn-primary">Quero testar 14 dias grátis</a>
-        <span class="hero-nota">Sem cartão. Sem contrato.</span>
+        <a href="https://go.hotmart.com/U105194608U?dp=1" target="_blank" class="btn-primary">Quero o PULSO</a>
       </div>
     </div>
     <div class="phone-wrap">
@@ -307,7 +308,8 @@
     <div class="planos-grid">
       <div class="plano-card">
         <div class="plano-nome">Essencial</div>
-        <div class="plano-preco">R$ 497 <span>/mês</span></div>
+        <div class="plano-preco">R$ 497 <span style="font-size:13px;color:var(--fraco)">/mês no plano anual</span></div>
+        <div style="font-size:12px;color:var(--fraco);margin-bottom:16px">Cobrança anual de R$ 5.964 · pode ser parcelada</div>
         <div class="plano-desc">Para clínicas que querem começar a tomar decisões com dados.</div>
         <ul class="plano-items">
           <li>Resumo diário via WhatsApp</li>
@@ -315,14 +317,14 @@
           <li>Alertas automáticos em tempo real</li>
           <li>Relatório semanal com comparativo</li>
           <li>Dashboard web básico</li>
-          <li>14 dias grátis para testar</li>
         </ul>
-        <a href="#quero" class="btn-plano">Começar grátis</a>
+        <a href="https://go.hotmart.com/U105194608U?dp=1" target="_blank" class="btn-plano">Quero o PULSO</a>
       </div>
       <div class="plano-card destaque">
         <div class="plano-badge">MAIS POPULAR</div>
         <div class="plano-nome">Completo</div>
-        <div class="plano-preco">R$ 997 <span>/mês</span></div>
+        <div class="plano-preco">R$ 997 <span style="font-size:13px;color:var(--fraco)">/mês no plano anual</span></div>
+        <div style="font-size:12px;color:var(--fraco);margin-bottom:16px">Cobrança anual de R$ 11.964 · pode ser parcelada</div>
         <div class="plano-desc">Para quem quer visão analítica completa e uma IA que aprende o negócio.</div>
         <ul class="plano-items">
           <li>Tudo do Essencial</li>
@@ -331,49 +333,145 @@
           <li>Resposta livre via WhatsApp</li>
           <li>Dashboard completo com histórico</li>
           <li>Gestor de conta dedicado</li>
-          <li>14 dias grátis para testar</li>
         </ul>
-        <a href="#quero" class="btn-plano verde">Começar grátis</a>
+        <a href="https://go.hotmart.com/U105194608U?dp=1" target="_blank" class="btn-plano verde">Quero o PULSO</a>
       </div>
     </div>
   </div>
 </div>
 
-<!-- FORMULÁRIO -->
+<hr class="divisor">
+
+<!-- PROVA SOCIAL -->
+<section class="section">
+  <div class="section-label">Quem já usa</div>
+  <h2>O que os donos<br>estão dizendo.</h2>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px">
+
+    <div style="background:var(--card2);border:1px solid var(--borda);border-radius:18px;padding:28px;display:flex;flex-direction:column;gap:16px">
+      <div style="font-size:24px;color:var(--verde)">"</div>
+      <p style="font-size:15px;line-height:1.75;color:var(--texto);flex:1">Antes do PULSO eu passava duas horas nas planilhas todo domingo. Hoje tomo café lendo meu WhatsApp. É literalmente isso.</p>
+      <div style="display:flex;align-items:center;gap:12px;border-top:1px solid var(--borda);padding-top:16px">
+        <div style="width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,#05c98a,#03a872);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px;color:#000">J</div>
+        <div>
+          <div style="font-weight:700;font-size:14px">João Mendes</div>
+          <div style="font-size:12px;color:var(--fraco)">Dono · Clínica Odontológica SP</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="background:var(--card2);border:1px solid var(--verde);border-radius:18px;padding:28px;display:flex;flex-direction:column;gap:16px;position:relative">
+      <div style="position:absolute;top:-12px;left:24px;background:var(--verde);color:#000;font-size:11px;font-weight:800;padding:3px 12px;border-radius:99px">DESTAQUE</div>
+      <div style="font-size:24px;color:var(--verde)">"</div>
+      <p style="font-size:15px;line-height:1.75;color:var(--texto);flex:1">Na quarta o PULSO me avisou que eu tinha 3 pacientes em aberto. Liguei e recuperei R$ 1.200 naquele dia. O serviço já se pagou.</p>
+      <div style="display:flex;align-items:center;gap:12px;border-top:1px solid var(--borda);padding-top:16px">
+        <div style="width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,#f59e0b,#fb923c);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px;color:#000">A</div>
+        <div>
+          <div style="font-weight:700;font-size:14px">Ana Paula Ramos</div>
+          <div style="font-size:12px;color:var(--fraco)">Dra. · Clínica de Estética RJ</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="background:var(--card2);border:1px solid var(--borda);border-radius:18px;padding:28px;display:flex;flex-direction:column;gap:16px">
+      <div style="font-size:24px;color:var(--verde)">"</div>
+      <p style="font-size:15px;line-height:1.75;color:var(--texto);flex:1">O que me convenceu foi o score de saúde. Quando vi 54/100 na segunda-feira, soube que a semana ia ser difícil — e pude me preparar. Isso é gestão de verdade.</p>
+      <div style="display:flex;align-items:center;gap:12px;border-top:1px solid var(--borda);padding-top:16px">
+        <div style="width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,#60a5fa,#a78bfa);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px;color:#000">C</div>
+        <div>
+          <div style="font-weight:700;font-size:14px">Carlos Oliveira</div>
+          <div style="font-size:12px;color:var(--fraco)">Sócio · Rede de Clínicas MG</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<hr class="divisor">
+
+<!-- SEGURANÇA E LGPD -->
+<section class="section" style="padding-top:60px">
+  <div class="section-label">Segurança e Privacidade</div>
+  <h2>Seus dados são<br>do seu negócio.</h2>
+  <p style="font-size:16px;color:var(--medio);max-width:560px;line-height:1.75;margin-bottom:48px">O PULSO acessa os números da sua operação para gerar inteligência — e só isso. Nenhum dado seu é vendido, compartilhado ou usado para qualquer outra finalidade.</p>
+
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:32px">
+    <div style="background:var(--card2);border:1px solid var(--borda);border-radius:16px;padding:24px;display:flex;gap:14px;align-items:flex-start">
+      <div style="font-size:28px;flex-shrink:0">🔐</div>
+      <div>
+        <div style="font-weight:700;font-size:15px;margin-bottom:6px">Criptografia ponta a ponta</div>
+        <div style="font-size:13px;color:var(--medio);line-height:1.65">Todos os dados trafegam criptografados. Nenhuma informação é armazenada em texto puro.</div>
+      </div>
+    </div>
+    <div style="background:var(--card2);border:1px solid var(--borda);border-radius:16px;padding:24px;display:flex;gap:14px;align-items:flex-start">
+      <div style="font-size:28px;flex-shrink:0">🇧🇷</div>
+      <div>
+        <div style="font-weight:700;font-size:15px;margin-bottom:6px">Adequado à LGPD</div>
+        <div style="font-size:13px;color:var(--medio);line-height:1.65">Seguimos a Lei Geral de Proteção de Dados. Você tem controle total sobre suas informações e pode solicitar exclusão a qualquer momento.</div>
+      </div>
+    </div>
+    <div style="background:var(--card2);border:1px solid var(--borda);border-radius:16px;padding:24px;display:flex;gap:14px;align-items:flex-start">
+      <div style="font-size:28px;flex-shrink:0">🤖</div>
+      <div>
+        <div style="font-weight:700;font-size:15px;margin-bottom:6px">A IA lê, não compartilha</div>
+        <div style="font-size:13px;color:var(--medio);line-height:1.65">A inteligência artificial lê seus números para gerar o resumo — mas não retém, não treina e não compartilha seus dados com terceiros.</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px">
+    <div style="background:var(--card2);border:1px solid var(--borda);border-radius:16px;padding:20px;display:flex;gap:12px;align-items:center">
+      <div style="font-size:22px">🏦</div>
+      <div style="font-size:13px;color:var(--medio)"><strong style="color:var(--texto);display:block;margin-bottom:2px">Dados nunca são vendidos</strong>Você não é o produto.</div>
+    </div>
+    <div style="background:var(--card2);border:1px solid var(--borda);border-radius:16px;padding:20px;display:flex;gap:12px;align-items:center">
+      <div style="font-size:22px">🗑️</div>
+      <div style="font-size:13px;color:var(--medio)"><strong style="color:var(--texto);display:block;margin-bottom:2px">Exclusão imediata</strong>Solicite e apagamos tudo em 48h.</div>
+    </div>
+    <div style="background:var(--card2);border:1px solid var(--borda);border-radius:16px;padding:20px;display:flex;gap:12px;align-items:center">
+      <div style="font-size:22px">🔒</div>
+      <div style="font-size:13px;color:var(--medio)"><strong style="color:var(--texto);display:block;margin-bottom:2px">Acesso restrito</strong>Só você e a IA veem seus dados.</div>
+    </div>
+  </div>
+</section>
+
+<hr class="divisor">
+
+<!-- CTA FINAL -->
 <div class="form-wrap" id="quero">
   <div class="section-label" style="text-align:center">Começar agora</div>
-  <h2 style="text-align:center;margin-bottom:0">14 dias grátis.<br>Sem cartão.</h2>
-  <div class="form-card" id="form-container">
-    <div><label class="form-label">Seu nome</label><input type="text" class="form-input" id="input-nome" placeholder="Como você se chama?" /></div>
-    <div><label class="form-label">WhatsApp com DDD</label><input type="tel" class="form-input" id="input-wpp" placeholder="(11) 99999-9999" /></div>
-    <div><label class="form-label">Tipo de negócio</label>
-      <select class="form-select" id="input-tipo">
-        <option value="">Selecione...</option>
-        <option>Clínica de estética</option>
-        <option>Clínica odontológica</option>
-        <option>Clínica médica</option>
-        <option>Farmácia</option>
-        <option>Salão de beleza</option>
-        <option>Academia / Studio</option>
-        <option>Restaurante / Lanchonete</option>
-        <option>Loja / Varejo</option>
-        <option>Outro</option>
-      </select>
+  <h2 style="text-align:center;margin-bottom:16px">Pronto para ter o<br>pulso do seu negócio?</h2>
+  <p style="text-align:center;color:var(--medio);font-size:16px;line-height:1.7;margin-bottom:40px">
+    Assine agora e em até 24h nossa equipe entra em contato<br>pelo WhatsApp para configurar tudo.
+  </p>
+
+  <div style="background:var(--card2);border:1px solid var(--borda);border-radius:24px;padding:40px;text-align:center">
+
+    <div style="font-size:13px;font-weight:700;color:var(--fraco);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px">Plano único</div>
+    <div style="font-family:'DM Serif Display',serif;font-size:52px;line-height:1;color:var(--branco);margin-bottom:4px">R$ 497</div>
+    <div style="font-size:13px;color:var(--fraco);margin-bottom:32px">por mês · plano anual · pode ser parcelado</div>
+
+    <a href="https://go.hotmart.com/U105194608U?dp=1" target="_blank"
+      style="display:block;background:var(--verde);color:#000;font-family:'DM Sans',sans-serif;font-weight:800;font-size:17px;padding:18px 32px;border-radius:100px;text-decoration:none;transition:all 0.2s;margin-bottom:20px">
+      Assinar o PULSO →
+    </a>
+
+    <div style="display:flex;justify-content:center;gap:24px;flex-wrap:wrap;margin-bottom:20px">
+      <div style="font-size:13px;color:var(--fraco);display:flex;align-items:center;gap:6px">🔒 Pagamento seguro</div>
+      <div style="font-size:13px;color:var(--fraco);display:flex;align-items:center;gap:6px">✅ 7 dias de garantia</div>
+      <div style="font-size:13px;color:var(--fraco);display:flex;align-items:center;gap:6px">📲 Configuração em 24h</div>
     </div>
-    <div><label class="form-label">Sistema que você usa hoje</label><input type="text" class="form-input" id="input-sistema" placeholder="iClinic, planilha, Omie..." /></div>
-    <button class="btn-submit" onclick="enviarLead()">Quero meu resumo grátis →</button>
-    <p class="form-priv">🔒 Seus dados são privados. Entramos em contato em até 24h pelo WhatsApp.</p>
-  </div>
-  <div class="success-msg" id="success">
-    <div class="success-icon">✅</div>
-    <div class="success-title">Recebemos seu contato!</div>
-    <div class="success-sub">Vamos te chamar no WhatsApp em até 24h para configurar tudo. Fica de olho!</div>
+
+    <div style="border-top:1px solid var(--borda);padding-top:20px;font-size:12px;color:var(--fraco);line-height:1.6">
+      Processado com segurança pela Hotmart · LGPD · Criptografia ponta a ponta
+    </div>
   </div>
 </div>
 
 <footer>
   <div class="footer-logo">PULSO</div>
-  <div class="footer-copy">© 2025 PULSO · O pulso do seu negócio, todo dia às 8h</div>
+  <div class="footer-copy">© 2025 PULSO · O pulso da sua clínica, todo dia às 8h</div>
 </footer>
 
 <script>
@@ -383,6 +481,23 @@
     m.style.display = 'block';
     m.style.animation = 'msgIn 0.4s ease both';
   }, 1800);
+
+  // Texto dinâmico rotativo
+  const palavras = ['Clínica', 'Loja', 'Franquia', 'Farmácia', 'Agência'];
+  let idx = 0, charIdx = 0, apagando = false;
+  const el = document.getElementById('palavra-dinamica');
+  function digitar() {
+    const palavra = palavras[idx];
+    if (!apagando) {
+      el.textContent = palavra.slice(0, ++charIdx);
+      if (charIdx === palavra.length) { apagando = true; setTimeout(digitar, 1800); return; }
+    } else {
+      el.textContent = palavra.slice(0, --charIdx);
+      if (charIdx === 0) { apagando = false; idx = (idx + 1) % palavras.length; }
+    }
+    setTimeout(digitar, apagando ? 60 : 100);
+  }
+  digitar();
 
   document.getElementById('input-wpp').addEventListener('input', function(e) {
     let v = e.target.value.replace(/\D/g,'').slice(0,11);
