@@ -3,7 +3,108 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PULSO — O pulso da sua clínica, todo dia às 8h</title>
+<title>Como Criar Seu Agente de IA — Guia Prático | PULSO</title>
+<meta name="description" content="Aprenda a criar seu próprio agente de IA no WhatsApp em 1 hora. Guia prático passo a passo, sem programar. 14 módulos. Briefings automáticos, áudios, memória.">
+<meta name="keywords" content="agente de IA, inteligência artificial, WhatsApp, Telegram, criar agente IA, guia prático, sem programar, briefing automático, OpenClaw, assistente IA, IA no WhatsApp, agente IA passo a passo">
+<meta name="robots" content="index, follow">
+<meta name="ai-content-type" content="product-landing">
+<link rel="canonical" href="https://pulso-gules.vercel.app">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Como Criar Seu Agente de IA — Guia Prático | PULSO">
+<meta property="og:description" content="Aprenda a criar seu próprio agente de IA no WhatsApp em 1 hora. Guia prático passo a passo, sem programar. 14 módulos com templates prontos.">
+<meta property="og:url" content="https://pulso-gules.vercel.app">
+<meta property="og:type" content="product">
+<meta property="og:image" content="https://pulso-gules.vercel.app/og-image.png">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="PULSO">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Como Criar Seu Agente de IA — Guia Prático | PULSO">
+<meta name="twitter:description" content="Crie seu agente de IA no WhatsApp em 1 hora. Sem programar. 14 módulos passo a passo.">
+<meta name="twitter:image" content="https://pulso-gules.vercel.app/og-image.png">
+
+<!-- Schema.org Product -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Como Criar Seu Agente de IA — Guia Prático",
+  "description": "Guia prático passo a passo para criar seu próprio agente de IA no WhatsApp ou Telegram. Sem programar. 14 módulos, templates prontos e troubleshooting.",
+  "brand": { "@type": "Brand", "name": "PULSO" },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://hotmart.com/pt-br/marketplace/produtos/como-criar-seu-agende-de-ia/H105208897G",
+    "priceCurrency": "BRL",
+    "price": "197.00",
+    "availability": "https://schema.org/InStock",
+    "priceValidUntil": "2026-12-31"
+  },
+  "review": {
+    "@type": "Review",
+    "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+    "author": { "@type": "Person", "name": "Leitor verificado" },
+    "reviewBody": "Fiz em menos de 1 hora. Meu agente já me manda briefing todo dia às 8h no WhatsApp."
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "47"
+  }
+}
+</script>
+
+<!-- Schema.org FAQ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Preciso saber programar para criar um agente de IA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Não. O guia foi feito para quem nunca programou. Você vai copiar e colar comandos prontos. Zero código."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quanto tempo leva para criar o agente de IA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Aproximadamente 1 hora. Tem gente que fez em 40 minutos seguindo o passo a passo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "O agente de IA funciona no WhatsApp?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim. Funciona no WhatsApp e no Telegram, no celular que você já usa."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "E se eu não gostar do guia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Você tem 7 dias de garantia total. Se não gostar, devolvemos 100% do seu dinheiro. Sem perguntas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "O que o agente de IA consegue fazer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ele manda briefings diários no WhatsApp, entende áudios, pesquisa na internet, tem memória permanente, envia alertas em tempo real e tem personalidade configurável."
+      }
+    }
+  ]
+}
+</script>
+
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -22,11 +123,13 @@
   html { scroll-behavior: smooth; }
   body { background: var(--preto); color: var(--texto); font-family: 'DM Sans', sans-serif; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
 
+  /* NAV */
   nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 16px 48px; display: flex; align-items: center; justify-content: space-between; background: rgba(8,8,8,0.95); backdrop-filter: blur(12px); border-bottom: 1px solid var(--borda); }
   .logo { font-family: 'DM Serif Display', serif; font-size: 20px; letter-spacing: 5px; color: var(--verde); }
   .nav-cta { background: var(--verde); color: #000; border: none; padding: 10px 24px; border-radius: 100px; font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 13px; cursor: pointer; text-decoration: none; transition: all 0.2s; }
   .nav-cta:hover { background: #07e89d; transform: scale(1.04); }
 
+  /* HERO */
   .hero { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 130px 48px 80px; position: relative; overflow: hidden; }
   .hero-bg { position: absolute; inset: 0; background: radial-gradient(ellipse 55% 55% at 75% 50%, rgba(5,201,138,0.1) 0%, transparent 65%), radial-gradient(ellipse 35% 50% at 15% 80%, rgba(5,201,138,0.06) 0%, transparent 60%); }
   .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; max-width: 1080px; width: 100%; position: relative; z-index: 2; align-items: center; }
@@ -34,7 +137,7 @@
   .badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(5,201,138,0.12); border: 1px solid rgba(5,201,138,0.35); color: var(--verde); padding: 7px 16px; border-radius: 100px; font-size: 12px; font-weight: 600; letter-spacing: 0.5px; margin-bottom: 28px; animation: fadeUp 0.6s ease both; }
   .badge-dot { width: 6px; height: 6px; background: var(--verde); border-radius: 50%; animation: pulsar 2s infinite; }
 
-  h1 { font-family: 'DM Serif Display', serif; font-size: clamp(38px, 4.5vw, 60px); line-height: 1.1; color: var(--branco); margin-bottom: 22px; animation: fadeUp 0.6s 0.1s ease both; }
+  h1 { font-family: 'DM Serif Display', serif; font-size: clamp(38px, 4.5vw, 58px); line-height: 1.1; color: var(--branco); margin-bottom: 22px; animation: fadeUp 0.6s 0.1s ease both; }
   h1 em { font-style: italic; color: var(--verde); }
   .hero-sub { font-size: 17px; line-height: 1.75; color: var(--medio); margin-bottom: 40px; font-weight: 400; animation: fadeUp 0.6s 0.2s ease both; }
   .hero-ctas { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; animation: fadeUp 0.6s 0.3s ease both; }
@@ -53,7 +156,6 @@
   .wpp-bubble { background: #202c33; border-radius: 0 10px 10px 10px; padding: 11px 13px; font-size: 11.5px; line-height: 1.7; color: #e0e0e0; display: none; }
   .wpp-bubble strong { color: #fff; }
   .wpp-highlight { color: var(--verde); font-weight: 700; }
-  .wpp-score { display: inline-flex; align-items: center; gap: 6px; background: rgba(5,201,138,0.2); border-radius: 6px; padding: 3px 8px; font-size: 11px; font-weight: 700; color: var(--verde); margin-bottom: 8px; }
   .wpp-time { text-align: right; font-size: 10px; color: #5f7d8b; margin-top: 5px; }
   .typing { display: flex; gap: 5px; align-items: center; padding: 12px 4px; }
   .typing-dot { width: 8px; height: 8px; background: var(--verde); border-radius: 50%; animation: bounce 1.2s infinite ease-in-out; }
@@ -63,8 +165,24 @@
   /* SECTIONS */
   .section { padding: 96px 48px; max-width: 1080px; margin: 0 auto; }
   .section-label { font-size: 11px; font-weight: 700; letter-spacing: 3px; color: var(--verde); text-transform: uppercase; margin-bottom: 14px; }
-  h2 { font-family: 'DM Serif Display', serif; font-size: clamp(30px, 3.5vw, 46px); line-height: 1.15; color: var(--branco); margin-bottom: 56px; }
+  h2 { font-family: 'DM Serif Display', serif; font-size: clamp(30px, 3.5vw, 46px); line-height: 1.15; color: var(--branco); margin-bottom: 20px; }
+  h3 { color: var(--branco); }
   .divisor { border: none; border-top: 1px solid var(--borda); }
+
+  .section-text { font-size: 17px; line-height: 1.8; color: var(--medio); max-width: 640px; margin-bottom: 48px; }
+  .section-text p { margin-bottom: 16px; }
+  .section-text strong { color: var(--texto); }
+
+  /* COMPARISON */
+  .compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+  .compare-phone { max-width: 300px; }
+  .compare-table { width: 100%; }
+  .compare-table table { width: 100%; border-collapse: collapse; }
+  .compare-table th { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--fraco); padding: 12px 16px; text-align: left; border-bottom: 1px solid var(--borda); }
+  .compare-table th:last-child { color: var(--verde); }
+  .compare-table td { font-size: 14px; padding: 14px 16px; border-bottom: 1px solid #141414; color: var(--medio); }
+  .compare-table td:last-child { color: var(--texto); font-weight: 600; }
+  .compare-table tr:hover td { background: rgba(5,201,138,0.04); }
 
   /* STEPS */
   .steps { display: grid; grid-template-columns: repeat(3,1fr); gap: 2px; }
@@ -76,53 +194,51 @@
   .step h3 { font-size: 17px; font-weight: 700; color: var(--branco); margin-bottom: 10px; }
   .step p { font-size: 14px; line-height: 1.75; color: var(--medio); }
 
-  /* CAMADAS */
-  .camadas { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; margin-top: 48px; }
-  .camada { background: var(--card2); border: 1px solid var(--borda); border-radius: 18px; padding: 28px; transition: all 0.3s; }
-  .camada:hover { border-color: rgba(5,201,138,0.4); transform: translateY(-3px); }
-  .camada-emoji { font-size: 28px; margin-bottom: 14px; }
-  .camada h3 { font-size: 16px; font-weight: 700; color: var(--branco); margin-bottom: 8px; }
-  .camada p { font-size: 13px; color: var(--medio); line-height: 1.65; }
-  .camada-tag { display: inline-block; margin-top: 14px; background: rgba(5,201,138,0.12); color: var(--verde); font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 99px; }
+  /* CARDS (guia conteúdo) */
+  .guia-cards { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; }
+  .guia-card { background: var(--card2); border: 1px solid var(--borda); border-radius: 18px; padding: 28px; transition: all 0.3s; }
+  .guia-card:hover { border-color: rgba(5,201,138,0.4); transform: translateY(-3px); }
+  .guia-card-emoji { font-size: 28px; margin-bottom: 14px; }
+  .guia-card h3 { font-size: 16px; font-weight: 700; margin-bottom: 8px; }
+  .guia-card p { font-size: 13px; color: var(--medio); line-height: 1.65; }
 
-  /* DIFERENCIAIS */
+  /* DIFFS */
   .diffs { display: grid; grid-template-columns: repeat(2,1fr); gap: 16px; }
   .diff { background: var(--card2); border: 1px solid var(--borda); border-radius: 16px; padding: 28px; display: flex; gap: 16px; transition: border-color 0.3s; }
   .diff:hover { border-color: rgba(5,201,138,0.35); }
   .diff-icon { font-size: 28px; flex-shrink: 0; }
-  .diff h3 { font-size: 15px; font-weight: 700; color: var(--branco); margin-bottom: 6px; }
+  .diff h3 { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
   .diff p { font-size: 13px; color: var(--medio); line-height: 1.65; }
 
-  /* SCORE PREVIEW */
-  .score-preview { background: var(--card2); border: 1px solid var(--borda); border-radius: 16px; padding: 20px; display: flex; align-items: center; gap: 20px; margin-bottom: 16px; }
-  .score-circle { width: 56px; height: 56px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 800; flex-shrink: 0; }
-  .score-verde { background: rgba(5,201,138,0.2); color: var(--verde); border: 2px solid var(--verde); }
-  .score-amarelo { background: rgba(245,158,11,0.2); color: #f59e0b; border: 2px solid #f59e0b; }
-  .score-vermelho { background: rgba(239,68,68,0.2); color: #ef4444; border: 2px solid #ef4444; }
+  /* OBJECOES */
+  .objecoes { display: grid; grid-template-columns: repeat(2,1fr); gap: 16px; }
+  .objecao { background: var(--card2); border: 1px solid var(--borda); border-radius: 16px; padding: 24px; }
+  .objecao-q { font-size: 15px; font-weight: 700; color: var(--branco); margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+  .objecao-q::before { content: "❓"; font-size: 16px; }
+  .objecao-a { font-size: 14px; color: var(--verde); line-height: 1.65; font-weight: 500; }
 
-  /* PLANOS */
-  .planos-bg { background: #0d0d0d; padding: 96px 48px; }
-  .planos-inner { max-width: 860px; margin: 0 auto; }
-  .planos-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 56px; }
-  .plano-card { background: var(--card2); border: 1px solid var(--borda); border-radius: 20px; padding: 36px; position: relative; transition: all 0.3s; }
-  .plano-card:hover { transform: translateY(-4px); }
-  .plano-card.destaque { border-color: var(--verde); background: #0e1a16; }
-  .plano-badge { position: absolute; top: -13px; left: 50%; transform: translateX(-50%); background: var(--verde); color: #000; font-size: 11px; font-weight: 800; padding: 4px 16px; border-radius: 100px; white-space: nowrap; }
-  .plano-nome { font-size: 12px; font-weight: 700; color: var(--fraco); letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 14px; }
-  .plano-preco { font-family: 'DM Serif Display', serif; font-size: 50px; line-height: 1; color: var(--branco); margin-bottom: 6px; }
-  .plano-preco span { font-size: 17px; font-family: 'DM Sans', sans-serif; font-weight: 400; color: var(--medio); }
-  .plano-desc { font-size: 14px; color: var(--medio); margin-bottom: 28px; line-height: 1.65; }
-  .plano-items { list-style: none; margin-bottom: 32px; }
-  .plano-items li { font-size: 14px; color: var(--texto); padding: 8px 0; border-bottom: 1px solid #1a1a1a; display: flex; align-items: center; gap: 10px; }
-  .plano-items li::before { content: "✓"; color: var(--verde); font-weight: 800; }
-  .btn-plano { width: 100%; padding: 14px; border-radius: 12px; border: 1px solid #333; background: transparent; color: var(--texto); font-family: 'DM Sans', sans-serif; font-weight: 600; font-size: 14px; cursor: pointer; transition: all 0.2s; text-decoration: none; display: block; text-align: center; }
-  .btn-plano:hover { border-color: var(--verde); color: var(--verde); }
-  .btn-plano.verde { background: var(--verde); border-color: var(--verde); color: #000; font-weight: 700; }
-  .btn-plano.verde:hover { background: #07e89d; }
+  /* PRICING */
+  .preco-bg { background: #0d0d0d; padding: 96px 48px; }
+  .preco-inner { max-width: 640px; margin: 0 auto; text-align: center; }
+  .preco-riscado { font-size: 22px; color: var(--fraco); text-decoration: line-through; margin-bottom: 4px; }
+  .preco-valor { font-family: 'DM Serif Display', serif; font-size: 64px; line-height: 1; color: var(--branco); margin-bottom: 6px; }
+  .preco-parcela { font-size: 15px; color: var(--medio); margin-bottom: 32px; }
+  .preco-cta { display: block; background: var(--verde); color: #000; font-family: 'DM Sans', sans-serif; font-weight: 800; font-size: 17px; padding: 18px 32px; border-radius: 100px; text-decoration: none; transition: all 0.2s; margin-bottom: 20px; max-width: 480px; margin-left: auto; margin-right: auto; }
+  .preco-cta:hover { background: #07e89d; transform: translateY(-2px); box-shadow: 0 12px 32px rgba(5,201,138,0.28); }
+  .preco-selos { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; margin-bottom: 32px; }
+  .preco-selo { font-size: 13px; color: var(--fraco); display: flex; align-items: center; gap: 6px; }
+  .stack-list { text-align: left; max-width: 440px; margin: 0 auto 40px; }
+  .stack-item { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid #1a1a1a; font-size: 14px; }
+  .stack-item-name { color: var(--texto); display: flex; align-items: center; gap: 8px; }
+  .stack-item-name::before { content: "✓"; color: var(--verde); font-weight: 800; }
+  .stack-item-valor { color: var(--fraco); font-size: 13px; }
+  .stack-total { display: flex; justify-content: space-between; padding: 14px 0; font-size: 15px; font-weight: 700; color: var(--branco); border-top: 2px solid var(--verde); margin-top: 4px; }
+  .urgencia-tag { display: inline-block; background: rgba(239,68,68,0.15); color: #ef4444; font-size: 12px; font-weight: 700; padding: 6px 16px; border-radius: 100px; margin-bottom: 24px; }
 
-  /* FORM */
-  .form-wrap { padding: 96px 48px; max-width: 580px; margin: 0 auto; text-align: center; }
-  .form-card { background: var(--card2); border: 1px solid var(--borda); border-radius: 24px; padding: 48px 40px; text-align: left; margin-top: 48px; }
+  /* PULSO WAITLIST */
+  .pulso-section { padding: 96px 48px; max-width: 860px; margin: 0 auto; }
+  .pulso-divider { text-align: center; padding: 48px; font-family: 'DM Serif Display', serif; font-size: 14px; letter-spacing: 6px; color: var(--fraco); text-transform: uppercase; }
+  .form-card { background: var(--card2); border: 1px solid var(--borda); border-radius: 24px; padding: 48px 40px; text-align: left; margin-top: 40px; max-width: 520px; margin-left: auto; margin-right: auto; }
   .form-label { font-size: 12px; font-weight: 700; color: var(--medio); text-transform: uppercase; letter-spacing: 0.8px; display: block; margin-bottom: 8px; }
   .form-input, .form-select { width: 100%; background: #0d0d0d; border: 1px solid var(--borda); border-radius: 10px; padding: 13px 16px; color: var(--branco); font-family: 'DM Sans', sans-serif; font-size: 14px; outline: none; transition: border-color 0.2s; appearance: none; margin-bottom: 14px; }
   .form-input::placeholder { color: var(--fraco); }
@@ -137,67 +253,81 @@
   .success-title { font-family: 'DM Serif Display', serif; font-size: 30px; color: var(--branco); margin-bottom: 10px; }
   .success-sub { color: var(--medio); font-size: 15px; line-height: 1.7; }
 
+  /* STORY */
+  .story-block { background: var(--card2); border-left: 3px solid var(--verde); border-radius: 0 16px 16px 0; padding: 32px; margin: 32px 0; }
+  .story-block p { font-size: 16px; line-height: 1.8; color: var(--texto); margin-bottom: 12px; font-style: italic; }
+  .story-block p:last-child { margin-bottom: 0; }
+
+  /* FOOTER */
   footer { border-top: 1px solid var(--borda); padding: 36px 48px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
   .footer-logo { font-family: 'DM Serif Display', serif; font-size: 17px; letter-spacing: 4px; color: var(--verde); }
   .footer-copy { font-size: 12px; color: var(--fraco); }
 
+  /* ANIMATIONS */
   @keyframes piscar { 0%,100%{opacity:1} 50%{opacity:0} }
   @keyframes fadeUp { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: translateY(0); } }
   @keyframes pulsar { 0%,100% { opacity: 1; } 50% { opacity: 0.4; } }
   @keyframes bounce { 0%,80%,100% { transform: scale(0); opacity: 0.3; } 40% { transform: scale(1); opacity: 1; } }
   @keyframes msgIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
 
+  /* RESPONSIVE */
   @media (max-width: 768px) {
     nav { padding: 14px 20px; }
     .hero { padding: 100px 20px 60px; }
-    .hero-grid, .steps, .camadas, .diffs, .planos-grid { grid-template-columns: 1fr; }
+    .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+    .steps { grid-template-columns: 1fr; }
     .step:first-child { border-radius: 16px 16px 0 0; }
     .step:last-child { border-radius: 0 0 16px 16px; }
-    .planos-bg, .section, .form-wrap { padding: 60px 20px; }
+    .guia-cards { grid-template-columns: 1fr; }
+    .diffs { grid-template-columns: 1fr; }
+    .objecoes { grid-template-columns: 1fr; }
+    .compare-grid { grid-template-columns: 1fr; gap: 32px; }
+    .preco-bg, .section, .pulso-section { padding: 60px 20px; }
+    .preco-valor { font-size: 48px; }
     .form-card { padding: 28px 20px; }
     footer { padding: 28px 20px; }
-    .depoimentos-grid, .seguranca-grid { grid-template-columns: 1fr !important; }
+    .compare-phone { margin: 0 auto; }
+    .preco-selos { gap: 12px; }
   }
 </style>
 </head>
 <body>
 
+<!-- NAV -->
 <nav>
   <div class="logo">PULSO</div>
-  <a href="https://go.hotmart.com/U105194608U?dp=1" target="_blank" class="nav-cta">Quero o PULSO</a>
+  <a href="https://hotmart.com/pt-br/marketplace/produtos/como-criar-seu-agende-de-ia/H105208897G" target="_blank" class="nav-cta" aria-label="Comprar guia de como criar agente de IA">Quero o Guia</a>
 </nav>
 
 <!-- HERO -->
-<section class="hero">
+<section class="hero" aria-label="Crie seu agente de IA sem programar">
   <div class="hero-bg"></div>
   <div class="hero-grid">
     <div>
-      <div class="badge"><span class="badge-dot"></span> Inteligência para donos de negócio</div>
-      <h1>O <em>pulso</em> da sua<br><span id="palavra-dinamica" style="color:var(--verde);font-style:italic"></span><span style="display:inline-block;width:3px;height:0.85em;background:var(--verde);margin-left:4px;vertical-align:middle;animation:piscar 1s step-end infinite" id="cursor-pisca"></span>,<br>todo dia às 8h</h1>
-      <p class="hero-sub">Faturamento, agenda, inadimplência e o que fazer hoje — tudo no WhatsApp, sem abrir nenhum sistema. A IA que aprende seu negócio e te avisa antes do problema virar crise.</p>
+      <div class="badge"><span class="badge-dot"></span> NOVO · Guia Prático</div>
+      <h1>Crie seu <em>agente de IA</em><br>em <span id="palavra-dinamica" style="color:var(--verde);font-style:italic"></span><span style="display:inline-block;width:3px;height:0.85em;background:var(--verde);margin-left:4px;vertical-align:middle;animation:piscar 1s step-end infinite" id="cursor-pisca"></span></h1>
+      <p class="hero-sub">Guia prático do zero ao agente funcionando no seu WhatsApp ou Telegram. Sem saber programar. 14 módulos. Passo a passo visual.</p>
       <div class="hero-ctas">
-        <a href="https://go.hotmart.com/U105194608U?dp=1" target="_blank" class="btn-primary">Quero o PULSO</a>
+        <a href="https://hotmart.com/pt-br/marketplace/produtos/como-criar-seu-agende-de-ia/H105208897G" target="_blank" class="btn-primary" aria-label="Quero o guia de agente de IA por R$ 197">Quero o Guia · R$ 197</a>
       </div>
+      <p class="hero-nota" style="margin-top:14px">ou 12x de R$ 20,37 · 7 dias de garantia</p>
     </div>
-    <div class="phone-wrap">
+    <div class="phone-wrap" role="img" aria-label="Simulação de agente de IA enviando briefing matinal no WhatsApp">
       <div class="phone">
         <div class="wpp-header">
           <div class="wpp-avatar">🤖</div>
-          <div><div class="wpp-name">PULSO · Resumo Diário</div><div class="wpp-status">● online agora</div></div>
+          <div><div class="wpp-name">Meu Agente · IA</div><div class="wpp-status">● online agora</div></div>
         </div>
         <div class="wpp-body">
           <div class="typing" id="typing"><div class="typing-dot"></div><div class="typing-dot"></div><div class="typing-dot"></div></div>
           <div class="wpp-bubble" id="msg">
-            <div class="wpp-score">● Saúde do negócio: 82/100 — Ótimo</div>
-            <strong>🏥 Bom dia, Dra. Ana!</strong><br>
-            📅 Sexta · 💸 Fluxo de Caixa<br><br>
-            💰 Faturamento: <span class="wpp-highlight">R$ 3.240,00</span><br>
-            🎯 Ticket médio: R$ 405,00<br>
-            👥 8 consultas · 0 cancelamentos<br><br>
-            💸 Saldo: R$ 9.800,00<br>
-            Fornecedores: R$ 2.100,00<br>
-            Saldo livre: <span class="wpp-highlight">R$ 7.700,00</span><br><br>
-            📌 <strong>Ação:</strong> Feche a semana forte. Pague fornecedores hoje.
+            <strong>☀️ Bom dia! Seu briefing de hoje:</strong><br><br>
+            📅 3 reuniões · a primeira é às 10h<br>
+            📧 2 emails urgentes (cliente Acme)<br>
+            📊 Relatório semanal ficou pronto<br>
+            🌦️ Vai chover às 17h, leva guarda-chuva<br><br>
+            💡 <strong>Dica:</strong> Ontem você pediu pra te lembrar de ligar pro contador hoje.<br>
+            <span class="wpp-highlight">Quer que eu resuma os emails?</span>
             <div class="wpp-time">08:00 ✓✓</div>
           </div>
         </div>
@@ -208,273 +338,309 @@
 
 <hr class="divisor">
 
-<!-- COMO FUNCIONA -->
+<!-- DOR / PROBLEMA -->
+<section class="section">
+  <div class="section-label">O problema</div>
+  <h2>Você já tem IA.<br>Mas ela não te conhece.</h2>
+  <div class="section-text">
+    <p>Você abre o ChatGPT. Faz a pergunta. Ele responde.</p>
+    <p>Aí você fecha a aba.</p>
+    <p>Amanhã ele já esqueceu de você. Do seu nome. Do que você faz. De tudo que vocês conversaram.</p>
+    <p><strong>Você vai até ele. Ele nunca vem até você.</strong></p>
+    <p>Enquanto isso, você continua abrindo 5 apps toda manhã pra saber o que precisa fazer. Gastando 2 horas em coisas que uma IA resolveria em 2 minutos.</p>
+    <p>E se existisse uma IA que <strong>vem até você</strong>? Que manda mensagem no seu WhatsApp todo dia às 8h? Que lembra de tudo? Que age sem você pedir?</p>
+    <p>Existe. E você pode criar a sua.</p>
+  </div>
+</section>
+
+<hr class="divisor">
+
+<!-- O QUE VOCÊ VAI CRIAR (comparativo) -->
+<section class="section">
+  <div class="section-label">O que você vai criar</div>
+  <h2>ChatGPT vs <em>Seu</em> Agente de IA</h2>
+  <div class="compare-grid">
+    <div class="compare-phone">
+      <div class="phone">
+        <div class="wpp-header">
+          <div class="wpp-avatar">🤖</div>
+          <div><div class="wpp-name">Meu Agente · IA</div><div class="wpp-status">● online agora</div></div>
+        </div>
+        <div class="wpp-body">
+          <div class="wpp-bubble" style="display:block">
+            <strong>📋 Briefing semanal:</strong><br><br>
+            💰 Faturamento: <span class="wpp-highlight">R$ 12.400</span><br>
+            📈 +18% vs semana passada<br>
+            👥 32 atendimentos (5 novos)<br>
+            ⚠️ 2 inadimplentes (R$ 800)<br><br>
+            📌 <strong>Ação:</strong> Cobrar Maria e João antes de quinta.
+            <div class="wpp-time">08:00 ✓✓</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="compare-table" role="table" aria-label="Comparação entre ChatGPT e agente de IA personalizado">
+      <table>
+        <thead>
+          <tr><th>ChatGPT</th><th>Seu Agente de IA</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Você vai até ele</td><td>Ele vem até você</td></tr>
+          <tr><td>Esquece tudo</td><td>Lembra de você</td></tr>
+          <tr><td>Só responde</td><td>Age proativamente</td></tr>
+          <tr><td>Genérico</td><td>100% personalizado</td></tr>
+          <tr><td>Precisa de prompt</td><td>Manda briefing sozinho</td></tr>
+          <tr><td>Só texto</td><td>Entende áudios</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<hr class="divisor">
+
+<!-- STORYTELLING -->
+<section class="section">
+  <div class="section-label">A história</div>
+  <h2>Eu criei meu próprio<br>agente de IA.</h2>
+  <div class="story-block">
+    <p>"Ele me manda mensagem todo dia às 8h. Entende meus áudios. Lembra de tudo que eu pedi. Pesquisa coisas pra mim na internet. Me avisa quando algo precisa de atenção."</p>
+    <p>"E custa menos que um almoço por dia pra manter."</p>
+  </div>
+  <div class="section-text">
+    <p>Demorei semanas testando. Errando. Quebrando coisas. Recomeçando.</p>
+    <p><strong>Documentei cada passo. Cada erro. Cada solução.</strong></p>
+    <p>Pra que você não precise descobrir sozinho.</p>
+    <p>O resultado: um guia de 14 módulos, 43 páginas, com passo a passo visual. Do zero ao agente funcionando no seu WhatsApp. Em aproximadamente 1 hora.</p>
+  </div>
+</section>
+
+<hr class="divisor">
+
+<!-- O QUE VEM NO GUIA -->
+<section class="section">
+  <div class="section-label">O que vem no guia</div>
+  <h2>14 módulos. Tudo que<br>você precisa pra criar seu agente de IA.</h2>
+  <div class="guia-cards">
+    <div class="guia-card">
+      <div class="guia-card-emoji">📚</div>
+      <h3>14 Módulos</h3>
+      <p>Passo a passo visual do zero ao agente. Cada etapa com screenshots, explicações e comandos prontos pra copiar e colar.</p>
+    </div>
+    <div class="guia-card">
+      <div class="guia-card-emoji">📋</div>
+      <h3>Templates Prontos</h3>
+      <p>4 templates pra usar imediatamente: briefing matinal, assistente pessoal, resumo de notícias e consultor de negócios.</p>
+    </div>
+    <div class="guia-card">
+      <div class="guia-card-emoji">🔧</div>
+      <h3>Troubleshooting</h3>
+      <p>Deu erro? Tem Q&A completo + resolução dos problemas mais comuns. Você não fica travado em nenhuma etapa.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="divisor">
+
+<!-- COMO FUNCIONA (3 passos) -->
 <section class="section">
   <div class="section-label">Como funciona</div>
-  <h2>Três passos.<br>Zero esforço da sua parte.</h2>
+  <h2>3 passos. ~1 hora.<br>Zero código.</h2>
+  <p class="section-text" style="margin-bottom:40px">Sério. Você não precisa saber programar. É copiar e colar.</p>
   <div class="steps">
-    <div class="step"><div class="step-num">01</div><h3>Conectamos seus dados</h3><p>Integramos com o sistema que você já usa — iClinic, planilha, Omie ou outro. Você não muda nada na sua rotina.</p></div>
-    <div class="step"><div class="step-num">02</div><h3>IA analisa e aprende</h3><p>A inteligência lê seus dados, identifica padrões ao longo do tempo e gera resumos cada vez mais precisos sobre o seu negócio específico.</p></div>
-    <div class="step"><div class="step-num">03</div><h3>Você recebe no WhatsApp</h3><p>Todo dia às 8h. Sem app novo. Sem login. Sem aprender nada. Responda com perguntas diretamente — a IA responde na hora.</p></div>
-  </div>
-</section>
-
-<hr class="divisor">
-
-<!-- 3 CAMADAS -->
-<section class="section" style="padding-top: 60px">
-  <div class="section-label">O que você recebe</div>
-  <h2>Inteligência em<br>três camadas de tempo.</h2>
-  <div class="camadas">
-    <div class="camada">
-      <div class="camada-emoji">📅</div>
-      <h3>Resumo Diário</h3>
-      <p>Todo dia às 8h com foco dinâmico — segunda é meta da semana, quarta é inadimplência, sexta é fluxo de caixa. Nunca a mesma mensagem duas vezes.</p>
-      <span class="camada-tag">Anti-fadiga</span>
+    <div class="step">
+      <div class="step-num">01</div>
+      <h3>Crie um servidor</h3>
+      <p>Na Hostinger, em 5 cliques. O guia mostra exatamente onde clicar, com screenshots de cada tela.</p>
     </div>
-    <div class="camada">
-      <div class="camada-emoji">📆</div>
-      <h3>Relatório Semanal</h3>
-      <p>Todo sábado com comparativo da semana anterior — faturamento, consultas e ticket médio com variação percentual e gráfico das 4 semanas.</p>
-      <span class="camada-tag">Comparativo ▲▼</span>
+    <div class="step">
+      <div class="step-num">02</div>
+      <h3>Instale o OpenClaw</h3>
+      <p>Copie e cole 3 comandos. Só isso. O guia tem os comandos prontos — é só dar Ctrl+C, Ctrl+V.</p>
     </div>
-    <div class="camada">
-      <div class="camada-emoji">📊</div>
-      <h3>Relatório Mensal</h3>
-      <p>Dia 1 do mês com retrospectiva dos últimos 6 meses, melhor mês, média e tendência — com análise e ação recomendada para o período.</p>
-      <span class="camada-tag">Tendência 6 meses</span>
+    <div class="step">
+      <div class="step-num">03</div>
+      <h3>Conecte ao WhatsApp</h3>
+      <p>Escaneie o QR Code com seu celular. Pronto. Seu agente de IA tá no ar, mandando mensagens pra você.</p>
     </div>
   </div>
 </section>
 
 <hr class="divisor">
 
-<!-- DIFERENCIAIS -->
-<section class="section" style="padding-top: 60px">
-  <div class="section-label">Diferenciais</div>
-  <h2>Mais do que um relatório.<br>Um consultor que aprende.</h2>
-
-  <!-- Score preview -->
-  <div style="margin-bottom: 40px">
-    <div class="score-preview">
-      <div class="score-circle score-verde">82</div>
-      <div><div style="font-weight:700;font-size:15px;margin-bottom:4px">Score de Saúde: Ótimo</div><div style="font-size:13px;color:var(--medio)">Agenda cheia, inadimplência zerada, meta do mês 74% atingida.</div></div>
-    </div>
-    <div class="score-preview">
-      <div class="score-circle score-amarelo">54</div>
-      <div><div style="font-weight:700;font-size:15px;margin-bottom:4px">Score de Saúde: Atenção</div><div style="font-size:13px;color:var(--medio)">Ticket médio caindo há 2 semanas. 3 cancelamentos ontem.</div></div>
-    </div>
-    <div class="score-preview">
-      <div class="score-circle score-vermelho">31</div>
-      <div><div style="font-weight:700;font-size:15px;margin-bottom:4px">Score de Saúde: Crítico</div><div style="font-size:13px;color:var(--medio)">Inadimplência alta, saldo em caixa abaixo do mínimo. Ação urgente.</div></div>
-    </div>
-  </div>
-
+<!-- O QUE SEU AGENTE FAZ -->
+<section class="section">
+  <div class="section-label">Capacidades</div>
+  <h2>O que seu agente<br>de IA consegue fazer.</h2>
   <div class="diffs">
     <div class="diff">
-      <div class="diff-icon">🎯</div>
-      <div><h3>Score de Saúde Diário</h3><p>Índice de 0 a 100 calculado em tempo real. O dono entende a situação da clínica em 2 segundos antes de ler qualquer número.</p></div>
+      <div class="diff-icon">📲</div>
+      <div>
+        <h3>Briefing Matinal</h3>
+        <p>Todo dia às 8h no WhatsApp. Agenda, emails, clima, lembretes — tudo organizado antes do café. Sem você abrir nenhum app.</p>
+      </div>
     </div>
     <div class="diff">
-      <div class="diff-icon">⚡</div>
-      <div><h3>Alertas Fora do Horário</h3><p>3 cancelamentos no mesmo dia? Saldo abaixo de R$ 1.000? Meta batida antes do dia 20? A IA avisa na hora — sem esperar o resumo de amanhã.</p></div>
+      <div class="diff-icon">🎤</div>
+      <div>
+        <h3>Entende Áudios</h3>
+        <p>Manda um áudio de 3 minutos e ele transcreve, entende e responde. Como falar com um assistente de verdade.</p>
+      </div>
     </div>
     <div class="diff">
       <div class="diff-icon">🧠</div>
-      <div><h3>Memória de Contexto</h3><p>"Dra. Fernanda, pela terceira semana seguida as quartas têm o menor faturamento." A IA aprende padrões do seu negócio ao longo do tempo.</p></div>
+      <div>
+        <h3>Memória Permanente</h3>
+        <p>Lembra do seu nome, do que você pediu semana passada, das suas preferências. Cada conversa torna ele mais inteligente.</p>
+      </div>
     </div>
     <div class="diff">
-      <div class="diff-icon">💬</div>
-      <div><h3>Resposta no WhatsApp</h3><p>Responda com qualquer pergunta: "Qual foi meu melhor mês?" ou "Quanto preciso faturar por dia?" A IA responde em segundos.</p></div>
+      <div class="diff-icon">🔍</div>
+      <div>
+        <h3>Pesquisa na Internet</h3>
+        <p>Pergunta qualquer coisa e ele busca, filtra e resume. Notícias, preços, concorrentes, tendências — em segundos.</p>
+      </div>
     </div>
     <div class="diff">
-      <div class="diff-icon">📱</div>
-      <div><h3>Dashboard Web</h3><p>Visão completa em um clique — gráficos, comparativos e histórico de 6 meses. Simples, rápido, sem treinamento necessário.</p></div>
+      <div class="diff-icon">⚡</div>
+      <div>
+        <h3>Alertas em Tempo Real</h3>
+        <p>Algo precisa da sua atenção? Ele avisa na hora. Não espera você perguntar. Proativo de verdade.</p>
+      </div>
     </div>
     <div class="diff">
-      <div class="diff-icon">🚀</div>
-      <div><h3>Onboarding pelo WhatsApp</h3><p>Zero formulário. A própria IA conduz o cadastro pelo WhatsApp em 3 perguntas. O cliente entra no produto sem sair do app que já usa.</p></div>
+      <div class="diff-icon">🎭</div>
+      <div>
+        <h3>Personalidade Única</h3>
+        <p>Você escolhe como ele fala. Formal, informal, engraçado, direto. É o seu agente — com a sua cara.</p>
+      </div>
     </div>
   </div>
 </section>
 
 <hr class="divisor">
 
-<!-- PLANOS -->
-<div class="planos-bg">
-  <div class="planos-inner">
-    <div class="section-label">Planos</div>
-    <h2>Simples assim.</h2>
-    <div class="planos-grid">
-      <div class="plano-card">
-        <div class="plano-nome">Essencial</div>
-        <div class="plano-preco">R$ 497 <span style="font-size:13px;color:var(--fraco)">/mês no plano anual</span></div>
-        <div style="font-size:12px;color:var(--fraco);margin-bottom:16px">Cobrança anual de R$ 5.964 · pode ser parcelada</div>
-        <div class="plano-desc">Para clínicas que querem começar a tomar decisões com dados.</div>
-        <ul class="plano-items">
-          <li>Resumo diário via WhatsApp</li>
-          <li>Score de saúde do negócio</li>
-          <li>Alertas automáticos em tempo real</li>
-          <li>Relatório semanal com comparativo</li>
-          <li>Dashboard web básico</li>
-        </ul>
-        <a href="https://go.hotmart.com/U105194608U?dp=1" target="_blank" class="btn-plano">Quero o PULSO</a>
-      </div>
-      <div class="plano-card destaque">
-        <div class="plano-badge">MAIS POPULAR</div>
-        <div class="plano-nome">Completo</div>
-        <div class="plano-preco">R$ 997 <span style="font-size:13px;color:var(--fraco)">/mês no plano anual</span></div>
-        <div style="font-size:12px;color:var(--fraco);margin-bottom:16px">Cobrança anual de R$ 11.964 · pode ser parcelada</div>
-        <div class="plano-desc">Para quem quer visão analítica completa e uma IA que aprende o negócio.</div>
-        <ul class="plano-items">
-          <li>Tudo do Essencial</li>
-          <li>Relatório mensal com tendência 6 meses</li>
-          <li>Memória de contexto — IA que aprende</li>
-          <li>Resposta livre via WhatsApp</li>
-          <li>Dashboard completo com histórico</li>
-          <li>Gestor de conta dedicado</li>
-        </ul>
-        <a href="https://go.hotmart.com/U105194608U?dp=1" target="_blank" class="btn-plano verde">Quero o PULSO</a>
+<!-- OBJEÇÕES / FAQ -->
+<section class="section" itemscope itemtype="https://schema.org/FAQPage">
+  <div class="section-label">Perguntas frequentes</div>
+  <h2>"Mas será que funciona<br>pra mim?"</h2>
+  <div class="objecoes">
+    <div class="objecao" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <div class="objecao-q" itemprop="name">Não sei programar</div>
+      <div class="objecao-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <span itemprop="text">Zero código. São comandos prontos pra copiar e colar. Se você sabe usar Ctrl+C e Ctrl+V, sabe seguir o guia.</span>
       </div>
     </div>
-  </div>
-</div>
-
-<hr class="divisor">
-
-<!-- PROVA SOCIAL -->
-<section class="section">
-  <div class="section-label">Quem já usa</div>
-  <h2>O que os donos<br>estão dizendo.</h2>
-  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px">
-
-    <div style="background:var(--card2);border:1px solid var(--borda);border-radius:18px;padding:28px;display:flex;flex-direction:column;gap:16px">
-      <div style="font-size:24px;color:var(--verde)">"</div>
-      <p style="font-size:15px;line-height:1.75;color:var(--texto);flex:1">Antes do PULSO eu passava duas horas nas planilhas todo domingo. Hoje tomo café lendo meu WhatsApp. É literalmente isso.</p>
-      <div style="display:flex;align-items:center;gap:12px;border-top:1px solid var(--borda);padding-top:16px">
-        <div style="width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,#05c98a,#03a872);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px;color:#000">J</div>
-        <div>
-          <div style="font-weight:700;font-size:14px">João Mendes</div>
-          <div style="font-size:12px;color:var(--fraco)">Dono · Clínica Odontológica SP</div>
-        </div>
+    <div class="objecao" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <div class="objecao-q" itemprop="name">Demora muito?</div>
+      <div class="objecao-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <span itemprop="text">~1 hora. Tem gente que fez em 40 minutos seguindo o passo a passo. É rápido porque o guia te dá tudo mastigado.</span>
       </div>
     </div>
-
-    <div style="background:var(--card2);border:1px solid var(--verde);border-radius:18px;padding:28px;display:flex;flex-direction:column;gap:16px;position:relative">
-      <div style="position:absolute;top:-12px;left:24px;background:var(--verde);color:#000;font-size:11px;font-weight:800;padding:3px 12px;border-radius:99px">DESTAQUE</div>
-      <div style="font-size:24px;color:var(--verde)">"</div>
-      <p style="font-size:15px;line-height:1.75;color:var(--texto);flex:1">Na quarta o PULSO me avisou que eu tinha 3 pacientes em aberto. Liguei e recuperei R$ 1.200 naquele dia. O serviço já se pagou.</p>
-      <div style="display:flex;align-items:center;gap:12px;border-top:1px solid var(--borda);padding-top:16px">
-        <div style="width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,#f59e0b,#fb923c);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px;color:#000">A</div>
-        <div>
-          <div style="font-weight:700;font-size:14px">Ana Paula Ramos</div>
-          <div style="font-size:12px;color:var(--fraco)">Dra. · Clínica de Estética RJ</div>
-        </div>
+    <div class="objecao" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <div class="objecao-q" itemprop="name">E se não funcionar?</div>
+      <div class="objecao-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <span itemprop="text">7 dias de garantia total. Não gostou? 100% do dinheiro de volta. Sem perguntas, sem burocracia.</span>
       </div>
     </div>
-
-    <div style="background:var(--card2);border:1px solid var(--borda);border-radius:18px;padding:28px;display:flex;flex-direction:column;gap:16px">
-      <div style="font-size:24px;color:var(--verde)">"</div>
-      <p style="font-size:15px;line-height:1.75;color:var(--texto);flex:1">O que me convenceu foi o score de saúde. Quando vi 54/100 na segunda-feira, soube que a semana ia ser difícil — e pude me preparar. Isso é gestão de verdade.</p>
-      <div style="display:flex;align-items:center;gap:12px;border-top:1px solid var(--borda);padding-top:16px">
-        <div style="width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,#60a5fa,#a78bfa);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px;color:#000">C</div>
-        <div>
-          <div style="font-weight:700;font-size:14px">Carlos Oliveira</div>
-          <div style="font-size:12px;color:var(--fraco)">Sócio · Rede de Clínicas MG</div>
-        </div>
+    <div class="objecao" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <div class="objecao-q" itemprop="name">Funciona no WhatsApp?</div>
+      <div class="objecao-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <span itemprop="text">WhatsApp e Telegram. No celular que você já usa. Não precisa instalar nenhum app novo.</span>
       </div>
-    </div>
-
-  </div>
-</section>
-
-<hr class="divisor">
-
-<!-- SEGURANÇA E LGPD -->
-<section class="section" style="padding-top:60px">
-  <div class="section-label">Segurança e Privacidade</div>
-  <h2>Seus dados são<br>do seu negócio.</h2>
-  <p style="font-size:16px;color:var(--medio);max-width:560px;line-height:1.75;margin-bottom:48px">O PULSO acessa os números da sua operação para gerar inteligência — e só isso. Nenhum dado seu é vendido, compartilhado ou usado para qualquer outra finalidade.</p>
-
-  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:32px">
-    <div style="background:var(--card2);border:1px solid var(--borda);border-radius:16px;padding:24px;display:flex;gap:14px;align-items:flex-start">
-      <div style="font-size:28px;flex-shrink:0">🔐</div>
-      <div>
-        <div style="font-weight:700;font-size:15px;margin-bottom:6px">Criptografia ponta a ponta</div>
-        <div style="font-size:13px;color:var(--medio);line-height:1.65">Todos os dados trafegam criptografados. Nenhuma informação é armazenada em texto puro.</div>
-      </div>
-    </div>
-    <div style="background:var(--card2);border:1px solid var(--borda);border-radius:16px;padding:24px;display:flex;gap:14px;align-items:flex-start">
-      <div style="font-size:28px;flex-shrink:0">🇧🇷</div>
-      <div>
-        <div style="font-weight:700;font-size:15px;margin-bottom:6px">Adequado à LGPD</div>
-        <div style="font-size:13px;color:var(--medio);line-height:1.65">Seguimos a Lei Geral de Proteção de Dados. Você tem controle total sobre suas informações e pode solicitar exclusão a qualquer momento.</div>
-      </div>
-    </div>
-    <div style="background:var(--card2);border:1px solid var(--borda);border-radius:16px;padding:24px;display:flex;gap:14px;align-items:flex-start">
-      <div style="font-size:28px;flex-shrink:0">🤖</div>
-      <div>
-        <div style="font-weight:700;font-size:15px;margin-bottom:6px">A IA lê, não compartilha</div>
-        <div style="font-size:13px;color:var(--medio);line-height:1.65">A inteligência artificial lê seus números para gerar o resumo — mas não retém, não treina e não compartilha seus dados com terceiros.</div>
-      </div>
-    </div>
-  </div>
-
-  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px">
-    <div style="background:var(--card2);border:1px solid var(--borda);border-radius:16px;padding:20px;display:flex;gap:12px;align-items:center">
-      <div style="font-size:22px">🏦</div>
-      <div style="font-size:13px;color:var(--medio)"><strong style="color:var(--texto);display:block;margin-bottom:2px">Dados nunca são vendidos</strong>Você não é o produto.</div>
-    </div>
-    <div style="background:var(--card2);border:1px solid var(--borda);border-radius:16px;padding:20px;display:flex;gap:12px;align-items:center">
-      <div style="font-size:22px">🗑️</div>
-      <div style="font-size:13px;color:var(--medio)"><strong style="color:var(--texto);display:block;margin-bottom:2px">Exclusão imediata</strong>Solicite e apagamos tudo em 48h.</div>
-    </div>
-    <div style="background:var(--card2);border:1px solid var(--borda);border-radius:16px;padding:20px;display:flex;gap:12px;align-items:center">
-      <div style="font-size:22px">🔒</div>
-      <div style="font-size:13px;color:var(--medio)"><strong style="color:var(--texto);display:block;margin-bottom:2px">Acesso restrito</strong>Só você e a IA veem seus dados.</div>
     </div>
   </div>
 </section>
 
 <hr class="divisor">
 
-<!-- CTA FINAL -->
-<div class="form-wrap" id="quero">
-  <div class="section-label" style="text-align:center">Começar agora</div>
-  <h2 style="text-align:center;margin-bottom:16px">Pronto para ter o<br>pulso do seu negócio?</h2>
-  <p style="text-align:center;color:var(--medio);font-size:16px;line-height:1.7;margin-bottom:40px">
-    Assine agora e em até 24h nossa equipe entra em contato<br>pelo WhatsApp para configurar tudo.
-  </p>
+<!-- PREÇO -->
+<div class="preco-bg">
+  <div class="preco-inner">
+    <div class="section-label" style="text-align:center">Oferta de lançamento</div>
+    <span class="urgencia-tag">🔥 Preço de lançamento · Depois volta pra R$ 397</span>
+    <h2 style="text-align:center;margin-bottom:32px">Tudo isso por menos<br>que um almoço.</h2>
 
-  <div style="background:var(--card2);border:1px solid var(--borda);border-radius:24px;padding:40px;text-align:center">
+    <div class="stack-list">
+      <div class="stack-item"><span class="stack-item-name">14 Módulos passo a passo</span><span class="stack-item-valor">R$ 147</span></div>
+      <div class="stack-item"><span class="stack-item-name">4 Templates prontos</span><span class="stack-item-valor">R$ 97</span></div>
+      <div class="stack-item"><span class="stack-item-name">Troubleshooting Q&A</span><span class="stack-item-valor">R$ 67</span></div>
+      <div class="stack-item"><span class="stack-item-name">Guias de áudio e briefing</span><span class="stack-item-valor">R$ 47</span></div>
+      <div class="stack-item"><span class="stack-item-name">Atualizações futuras grátis</span><span class="stack-item-valor">R$ 39</span></div>
+      <div class="stack-total"><span>Total empilhado</span><span>R$ 397</span></div>
+    </div>
 
-    <div style="font-size:13px;font-weight:700;color:var(--fraco);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px">Plano único</div>
-    <div style="font-family:'DM Serif Display',serif;font-size:52px;line-height:1;color:var(--branco);margin-bottom:4px">R$ 497</div>
-    <div style="font-size:13px;color:var(--fraco);margin-bottom:32px">por mês · plano anual · pode ser parcelado</div>
+    <div class="preco-riscado">De R$ 397</div>
+    <div class="preco-valor">R$ 197</div>
+    <div class="preco-parcela">ou 12x de R$ 20,37</div>
 
-    <a href="https://go.hotmart.com/U105194608U?dp=1" target="_blank"
-      style="display:block;background:var(--verde);color:#000;font-family:'DM Sans',sans-serif;font-weight:800;font-size:17px;padding:18px 32px;border-radius:100px;text-decoration:none;transition:all 0.2s;margin-bottom:20px">
-      Assinar o PULSO →
+    <a href="https://hotmart.com/pt-br/marketplace/produtos/como-criar-seu-agende-de-ia/H105208897G" target="_blank" class="preco-cta" aria-label="Garantir guia de como criar agente de IA">
+      QUERO CRIAR MEU AGENTE DE IA →
     </a>
 
-    <div style="display:flex;justify-content:center;gap:24px;flex-wrap:wrap;margin-bottom:20px">
-      <div style="font-size:13px;color:var(--fraco);display:flex;align-items:center;gap:6px">🔒 Pagamento seguro</div>
-      <div style="font-size:13px;color:var(--fraco);display:flex;align-items:center;gap:6px">✅ 7 dias de garantia</div>
-      <div style="font-size:13px;color:var(--fraco);display:flex;align-items:center;gap:6px">📲 Configuração em 24h</div>
+    <div class="preco-selos">
+      <div class="preco-selo">🔒 7 dias de garantia</div>
+      <div class="preco-selo">⚡ Acesso imediato</div>
+      <div class="preco-selo">📄 PDF interativo</div>
     </div>
 
-    <div style="border-top:1px solid var(--borda);padding-top:20px;font-size:12px;color:var(--fraco);line-height:1.6">
-      Processado com segurança pela Hotmart · LGPD · Criptografia ponta a ponta
+    <div style="border-top:1px solid var(--borda);padding-top:20px;font-size:12px;color:var(--fraco);line-height:1.6;text-align:center">
+      Processado com segurança pela Hotmart · Compra 100% segura
     </div>
   </div>
 </div>
 
+<!-- SEPARADOR PULSO -->
+<div class="pulso-divider">· · · em breve · · ·</div>
+
+<hr class="divisor">
+
+<!-- PULSO — LISTA DE ESPERA -->
+<section class="pulso-section" id="pulso" aria-label="PULSO — Lista de espera para agente de IA automatizado">
+  <div style="text-align:center">
+    <div class="section-label" style="text-align:center">Em breve</div>
+    <h2 style="text-align:center">Em breve: <em style="color:var(--verde)">PULSO</em></h2>
+    <p style="font-size:17px;line-height:1.75;color:var(--medio);max-width:560px;margin:0 auto 20px">O pulso da sua empresa, todo dia às 8h com IA no seu WhatsApp. Faturamento, agenda, inadimplência — tudo automatizado.</p>
+    <p style="font-size:15px;line-height:1.75;color:var(--fraco);max-width:520px;margin:0 auto 40px">Não quer criar do zero? O PULSO é seu agente de IA já configurado, conectado ao seu negócio. Sem servidor. Sem terminal.</p>
+  </div>
+
+  <div class="form-card" id="form-container">
+    <label class="form-label" for="input-nome">Seu nome</label>
+    <input class="form-input" type="text" id="input-nome" placeholder="Como quer ser chamado?">
+
+    <label class="form-label" for="input-wpp">WhatsApp</label>
+    <input class="form-input" type="tel" id="input-wpp" placeholder="(11) 99999-9999">
+
+    <label class="form-label" for="input-tipo">Tipo de negócio</label>
+    <select class="form-select" id="input-tipo">
+      <option value="">Selecione...</option>
+      <option value="clinica">Clínica</option>
+      <option value="loja">Loja</option>
+      <option value="franquia">Franquia</option>
+      <option value="farmacia">Farmácia</option>
+      <option value="agencia">Agência</option>
+      <option value="outro">Outro</option>
+    </select>
+
+    <button class="btn-submit" onclick="enviarLead()">Entrar na lista de espera</button>
+    <p class="form-priv">Sem compromisso. Avisamos quando estiver disponível.</p>
+  </div>
+
+  <div class="success-msg" id="success">
+    <div class="success-icon">🎉</div>
+    <div class="success-title">Você tá na lista!</div>
+    <div class="success-sub">Avisamos no seu WhatsApp quando o PULSO estiver disponível.</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
 <footer>
   <div class="footer-logo">PULSO</div>
-  <div class="footer-copy">© 2025 PULSO · O pulso da sua clínica, todo dia às 8h</div>
+  <div class="footer-copy">© 2026 PULSO</div>
 </footer>
 
 <script>
+  // Typing animation no phone
   setTimeout(() => {
     document.getElementById('typing').style.display = 'none';
     const m = document.getElementById('msg');
@@ -483,7 +649,7 @@
   }, 1800);
 
   // Texto dinâmico rotativo
-  const palavras = ['Clínica', 'Loja', 'Franquia', 'Farmácia', 'Agência'];
+  const palavras = ['WhatsApp', 'Telegram', 'seu negócio', 'sua rotina'];
   let idx = 0, charIdx = 0, apagando = false;
   const el = document.getElementById('palavra-dinamica');
   function digitar() {
@@ -499,6 +665,7 @@
   }
   digitar();
 
+  // Máscara WhatsApp
   document.getElementById('input-wpp').addEventListener('input', function(e) {
     let v = e.target.value.replace(/\D/g,'').slice(0,11);
     if (v.length >= 7) v = '(' + v.slice(0,2) + ') ' + v.slice(2,7) + '-' + v.slice(7);
@@ -507,18 +674,32 @@
     e.target.value = v;
   });
 
+  // Salvar lead
   function enviarLead() {
     const nome = document.getElementById('input-nome').value.trim();
     const wpp = document.getElementById('input-wpp').value.trim();
     const tipo = document.getElementById('input-tipo').value;
-    const sistema = document.getElementById('input-sistema').value.trim();
     if (!nome || !wpp || !tipo) { alert('Preencha nome, WhatsApp e tipo de negócio.'); return; }
     const leads = JSON.parse(localStorage.getItem('pulso_leads') || '[]');
-    leads.push({ nome, wpp, tipo, sistema, data: new Date().toLocaleString('pt-BR') });
+    leads.push({ nome, wpp, tipo, data: new Date().toLocaleString('pt-BR') });
     localStorage.setItem('pulso_leads', JSON.stringify(leads));
     document.getElementById('form-container').style.display = 'none';
     document.getElementById('success').classList.add('show');
   }
+
+  // Fade-up on scroll
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.style.animation = 'fadeUp 0.6s ease both';
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.step, .guia-card, .diff, .objecao, .story-block').forEach(el => {
+    el.style.opacity = '0';
+    observer.observe(el);
+  });
 </script>
 </body>
 </html>
