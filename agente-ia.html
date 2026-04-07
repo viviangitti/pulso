@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Como Criar Seu Agente de IA — Guia Prático | PULSO</title>
+<meta name="description" content="Crie seu próprio agente de IA no WhatsApp em 1 hora. Guia prático passo a passo, sem programar. 14 módulos. Briefings automáticos, áudios, memória. R$ 197.">
+<meta name="keywords" content="agente de IA, inteligência artificial, WhatsApp, Telegram, criar agente IA, guia prático, sem programar, briefing automático, OpenClaw, assistente IA">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://pulso-gules.vercel.app/agente-ia">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Como Criar Seu Agente de IA — Guia Prático">
+<meta property="og:description" content="Crie seu agente de IA no WhatsApp em 1 hora. Sem programar. 14 módulos passo a passo. R$ 197.">
+<meta property="og:url" content="https://pulso-gules.vercel.app/agente-ia">
+<meta property="og:type" content="product">
+<meta property="og:image" content="https://pulso-gules.vercel.app/og-image.png">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="PULSO">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Como Criar Seu Agente de IA — Guia Prático">
+<meta name="twitter:description" content="Crie seu agente de IA no WhatsApp em 1 hora. Sem programar. 14 módulos. R$ 197.">
+<meta name="twitter:image" content="https://pulso-gules.vercel.app/og-image.png">
+
+<!-- Schema.org Product -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Como Criar Seu Agente de IA — Guia Prático",
+  "description": "Guia prático passo a passo para criar seu próprio agente de IA no WhatsApp ou Telegram. Sem programar. 14 módulos, templates prontos e troubleshooting.",
+  "brand": { "@type": "Brand", "name": "PULSO" },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://pay.hotmart.com/H105208897G",
+    "priceCurrency": "BRL",
+    "price": "197.00",
+    "availability": "https://schema.org/InStock",
+    "priceValidUntil": "2026-12-31"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "47"
+  }
+}
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --preto: #080808;
+    --verde: #05c98a;
+    --verde-dark: #04a872;
+    --branco: #ffffff;
+    --texto: #e8e8e8;
+    --medio: #b0b0b0;
+    --fraco: #606060;
+    --card: #111111;
+    --card2: #161616;
+    --borda: #1f1f1f;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { background: var(--preto); color: var(--texto); font-family: 'DM Sans', sans-serif; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 16px 48px; display: flex; align-items: center; justify-content: space-between; background: rgba(8,8,8,0.95); backdrop-filter: blur(12px); border-bottom: 1px solid var(--borda); }
+  .logo { font-family: 'DM Serif Display', serif; font-size: 20px; letter-spacing: 5px; color: var(--verde); text-decoration: none; }
+  .nav-cta { background: var(--verde); color: #000; border: none; padding: 10px 24px; border-radius: 100px; font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 13px; cursor: pointer; text-decoration: none; transition: all 0.2s; }
+  .nav-cta:hover { background: #07e89d; transform: scale(1.04); }
+
+  .hero { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 130px 48px 80px; position: relative; overflow: hidden; }
+  .hero-bg { position: absolute; inset: 0; background: radial-gradient(ellipse 55% 55% at 75% 50%, rgba(5,201,138,0.1) 0%, transparent 65%), radial-gradient(ellipse 35% 50% at 15% 80%, rgba(5,201,138,0.06) 0%, transparent 60%); }
+  .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; max-width: 1080px; width: 100%; position: relative; z-index: 2; align-items: center; }
+
+  .badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(5,201,138,0.12); border: 1px solid rgba(5,201,138,0.35); color: var(--verde); padding: 7px 16px; border-radius: 100px; font-size: 12px; font-weight: 600; letter-spacing: 0.5px; margin-bottom: 28px; animation: fadeUp 0.6s ease both; }
+  .badge-dot { width: 6px; height: 6px; background: var(--verde); border-radius: 50%; animation: pulsar 2s infinite; }
+
+  h1 { font-family: 'DM Serif Display', serif; font-size: clamp(38px, 4.5vw, 58px); line-height: 1.1; color: var(--branco); margin-bottom: 22px; animation: fadeUp 0.6s 0.1s ease both; }
+  h1 em { font-style: italic; color: var(--verde); }
+  h2 { font-family: 'DM Serif Display', serif; font-size: clamp(30px, 3.5vw, 46px); line-height: 1.15; color: var(--branco); margin-bottom: 20px; }
+  h3 { color: var(--branco); }
+  .hero-sub { font-size: 17px; line-height: 1.75; color: var(--medio); margin-bottom: 40px; font-weight: 400; animation: fadeUp 0.6s 0.2s ease both; }
+  .btn-primary { background: var(--verde); color: #000; border: none; padding: 16px 32px; border-radius: 100px; font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 15px; cursor: pointer; text-decoration: none; display: inline-block; transition: all 0.2s; animation: fadeUp 0.6s 0.3s ease both; }
+  .btn-primary:hover { background: #07e89d; transform: translateY(-2px); box-shadow: 0 12px 32px rgba(5,201,138,0.28); }
+  .hero-nota { font-size: 13px; color: var(--fraco); margin-top: 14px; animation: fadeUp 0.6s 0.4s ease both; }
+
+  .phone-wrap { animation: fadeUp 0.7s 0.2s ease both; }
+  .phone { background: #111; border-radius: 28px; padding: 18px 14px; border: 1px solid #222; box-shadow: 0 40px 80px rgba(0,0,0,0.7); max-width: 300px; margin: 0 auto; }
+  .wpp-header { background: #1a2b33; border-radius: 10px 10px 0 0; padding: 12px 14px; display: flex; align-items: center; gap: 10px; }
+  .wpp-avatar { width: 34px; height: 34px; background: var(--verde); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 16px; flex-shrink: 0; }
+  .wpp-name { font-size: 13px; font-weight: 700; color: #fff; }
+  .wpp-status { font-size: 11px; color: var(--verde); }
+  .wpp-body { background: #0c1317; border-radius: 0 0 10px 10px; padding: 14px 12px; min-height: 120px; }
+  .wpp-bubble { background: #202c33; border-radius: 0 10px 10px 10px; padding: 11px 13px; font-size: 11.5px; line-height: 1.7; color: #e0e0e0; }
+  .wpp-bubble strong { color: #fff; }
+  .wpp-highlight { color: var(--verde); font-weight: 700; }
+  .wpp-time { text-align: right; font-size: 10px; color: #5f7d8b; margin-top: 5px; }
+
+  .section { padding: 80px 48px; max-width: 1080px; margin: 0 auto; }
+  .section-label { font-size: 11px; font-weight: 700; letter-spacing: 3px; color: var(--verde); text-transform: uppercase; margin-bottom: 14px; }
+  .section-text { font-size: 17px; line-height: 1.8; color: var(--medio); max-width: 640px; margin-bottom: 40px; }
+  .section-text p { margin-bottom: 16px; }
+  .section-text strong { color: var(--texto); }
+  .divisor { border: none; border-top: 1px solid var(--borda); }
+
+  .compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+  .compare-table { width: 100%; }
+  .compare-table table { width: 100%; border-collapse: collapse; }
+  .compare-table th { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--fraco); padding: 12px 16px; text-align: left; border-bottom: 1px solid var(--borda); }
+  .compare-table th:last-child { color: var(--verde); }
+  .compare-table td { font-size: 14px; padding: 14px 16px; border-bottom: 1px solid #141414; color: var(--medio); }
+  .compare-table td:last-child { color: var(--texto); font-weight: 600; }
+  .compare-table tr:hover td { background: rgba(5,201,138,0.04); }
+
+  .steps { display: grid; grid-template-columns: repeat(3,1fr); gap: 2px; }
+  .step { background: var(--card2); padding: 36px 30px; transition: background 0.3s; }
+  .step:first-child { border-radius: 16px 0 0 16px; }
+  .step:last-child { border-radius: 0 16px 16px 0; }
+  .step:hover { background: #1c1c1c; }
+  .step-num { font-family: 'DM Serif Display', serif; font-size: 44px; color: rgba(5,201,138,0.2); line-height: 1; margin-bottom: 20px; }
+  .step h3 { font-size: 17px; font-weight: 700; margin-bottom: 10px; }
+  .step p { font-size: 14px; line-height: 1.75; color: var(--medio); }
+
+  .guia-cards { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; }
+  .guia-card { background: var(--card2); border: 1px solid var(--borda); border-radius: 18px; padding: 28px; transition: all 0.3s; }
+  .guia-card:hover { border-color: rgba(5,201,138,0.4); transform: translateY(-3px); }
+  .guia-card-emoji { font-size: 28px; margin-bottom: 14px; }
+  .guia-card h3 { font-size: 16px; font-weight: 700; margin-bottom: 8px; }
+  .guia-card p { font-size: 13px; color: var(--medio); line-height: 1.65; }
+
+  .diffs { display: grid; grid-template-columns: repeat(2,1fr); gap: 16px; }
+  .diff { background: var(--card2); border: 1px solid var(--borda); border-radius: 16px; padding: 28px; display: flex; gap: 16px; transition: border-color 0.3s; }
+  .diff:hover { border-color: rgba(5,201,138,0.35); }
+  .diff-icon { font-size: 28px; flex-shrink: 0; }
+  .diff h3 { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
+  .diff p { font-size: 13px; color: var(--medio); line-height: 1.65; }
+
+  .objecoes { display: grid; grid-template-columns: repeat(2,1fr); gap: 16px; }
+  .objecao { background: var(--card2); border: 1px solid var(--borda); border-radius: 16px; padding: 24px; }
+  .objecao-q { font-size: 15px; font-weight: 700; color: var(--branco); margin-bottom: 8px; }
+  .objecao-a { font-size: 14px; color: var(--verde); line-height: 1.65; font-weight: 500; }
+
+  .preco-bg { background: #0d0d0d; padding: 80px 48px; }
+  .preco-inner { max-width: 640px; margin: 0 auto; text-align: center; }
+  .preco-riscado { font-size: 22px; color: var(--fraco); text-decoration: line-through; margin-bottom: 4px; }
+  .preco-valor { font-family: 'DM Serif Display', serif; font-size: 64px; line-height: 1; color: var(--branco); margin-bottom: 6px; }
+  .preco-parcela { font-size: 15px; color: var(--medio); margin-bottom: 32px; }
+  .preco-cta { display: block; background: var(--verde); color: #000; font-family: 'DM Sans', sans-serif; font-weight: 800; font-size: 17px; padding: 18px 32px; border-radius: 100px; text-decoration: none; transition: all 0.2s; margin-bottom: 20px; max-width: 480px; margin-left: auto; margin-right: auto; }
+  .preco-cta:hover { background: #07e89d; transform: translateY(-2px); box-shadow: 0 12px 32px rgba(5,201,138,0.28); }
+  .preco-selos { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; margin-bottom: 32px; }
+  .preco-selo { font-size: 13px; color: var(--fraco); display: flex; align-items: center; gap: 6px; }
+  .stack-list { text-align: left; max-width: 440px; margin: 0 auto 40px; }
+  .stack-item { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid #1a1a1a; font-size: 14px; }
+  .stack-item-name { color: var(--texto); display: flex; align-items: center; gap: 8px; }
+  .stack-item-name::before { content: "✓"; color: var(--verde); font-weight: 800; }
+  .stack-item-valor { color: var(--fraco); font-size: 13px; }
+  .stack-total { display: flex; justify-content: space-between; padding: 14px 0; font-size: 15px; font-weight: 700; color: var(--branco); border-top: 2px solid var(--verde); margin-top: 4px; }
+  .urgencia-tag { display: inline-block; background: rgba(239,68,68,0.15); color: #ef4444; font-size: 12px; font-weight: 700; padding: 6px 16px; border-radius: 100px; margin-bottom: 24px; }
+
+  .story-block { background: var(--card2); border-left: 3px solid var(--verde); border-radius: 0 16px 16px 0; padding: 32px; margin: 32px 0; }
+  .story-block p { font-size: 16px; line-height: 1.8; color: var(--texto); margin-bottom: 12px; font-style: italic; }
+  .story-block p:last-child { margin-bottom: 0; }
+
+  footer { border-top: 1px solid var(--borda); padding: 36px 48px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+  .footer-logo { font-family: 'DM Serif Display', serif; font-size: 17px; letter-spacing: 4px; color: var(--verde); text-decoration: none; }
+  .footer-copy { font-size: 12px; color: var(--fraco); }
+
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes pulsar { 0%,100% { opacity: 1; } 50% { opacity: 0.4; } }
+  @keyframes bounce { 0%,80%,100% { transform: scale(0); opacity: 0.3; } 40% { transform: scale(1); opacity: 1; } }
+  @keyframes msgIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+  @media (max-width: 768px) {
+    nav { padding: 14px 20px; }
+    .hero { padding: 100px 20px 60px; }
+    .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+    .steps { grid-template-columns: 1fr; }
+    .step:first-child { border-radius: 16px 16px 0 0; }
+    .step:last-child { border-radius: 0 0 16px 16px; }
+    .guia-cards { grid-template-columns: 1fr; }
+    .diffs { grid-template-columns: 1fr; }
+    .objecoes { grid-template-columns: 1fr; }
+    .compare-grid { grid-template-columns: 1fr; gap: 32px; }
+    .section { padding: 60px 20px; }
+    .preco-bg { padding: 60px 20px; }
+    .preco-valor { font-size: 48px; }
+    footer { padding: 28px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="/" class="logo">PULSO</a>
+  <a href="https://pay.hotmart.com/H105208897G" target="_blank" class="nav-cta">Quero o Guia</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid">
+    <div>
+      <div class="badge"><span class="badge-dot"></span> Guia Prático · 14 Módulos</div>
+      <h1>Crie seu <em>agente de IA</em><br>no WhatsApp</h1>
+      <p class="hero-sub">O controle do seu negócio no WhatsApp, agora turbinado por IA. Guia prático do zero ao agente funcionando. Sem saber programar. Passo a passo visual.</p>
+      <a href="https://pay.hotmart.com/H105208897G" target="_blank" class="btn-primary">Quero o Guia · R$ 197</a>
+      <p class="hero-nota">ou 12x de R$ 20,37 · 7 dias de garantia</p>
+    </div>
+    <div class="phone-wrap">
+      <div class="phone">
+        <div class="wpp-header">
+          <div class="wpp-avatar">🤖</div>
+          <div><div class="wpp-name">Meu Agente · IA</div><div class="wpp-status">● online agora</div></div>
+        </div>
+        <div class="wpp-body">
+          <div class="wpp-bubble" style="display:block" id="msg">
+            <strong>☀️ Bom dia! Seu briefing de hoje:</strong><br><br>
+            📅 3 reuniões · a primeira é às 10h<br>
+            📧 2 emails urgentes (cliente Acme)<br>
+            📊 Relatório semanal ficou pronto<br>
+            🌦️ Vai chover às 17h, leva guarda-chuva<br><br>
+            💡 <strong>Dica:</strong> Ontem você pediu pra te lembrar de ligar pro contador hoje.<br>
+            <span class="wpp-highlight">Quer que eu resuma os emails?</span>
+            <div class="wpp-time">08:00 ✓✓</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divisor">
+
+<!-- DOR / PROBLEMA -->
+<section class="section">
+  <div class="section-label">O problema</div>
+  <h2>Você já tem IA.<br>Mas ela não te <em>conhece</em>.</h2>
+  <div class="section-text">
+    <p>Você abre o ChatGPT. Faz a pergunta. Ele responde.</p>
+    <p>Aí você fecha a aba.</p>
+    <p>Amanhã ele já esqueceu de você. Do seu nome. Do que você faz. De tudo que vocês conversaram.</p>
+    <p><strong>Você vai até ele. Ele nunca vem até você.</strong></p>
+    <p>E se existisse uma IA que <strong>vem até você</strong>? Que manda mensagem no seu WhatsApp todo dia às 8h? Que lembra de tudo? Que age sem você pedir?</p>
+    <p>Existe. E você pode criar a sua.</p>
+  </div>
+</section>
+
+<hr class="divisor">
+
+<!-- COMPARATIVO -->
+<section class="section">
+  <div class="section-label">O que você vai criar</div>
+  <h2>ChatGPT vs <em>Seu</em> Agente de IA</h2>
+  <div class="compare-grid">
+    <div>
+      <div class="phone">
+        <div class="wpp-header">
+          <div class="wpp-avatar">🤖</div>
+          <div><div class="wpp-name">Meu Agente · IA</div><div class="wpp-status">● online agora</div></div>
+        </div>
+        <div class="wpp-body">
+          <div class="wpp-bubble" style="display:block">
+            <strong>📋 Briefing semanal:</strong><br><br>
+            💰 Faturamento: <span class="wpp-highlight">R$ 12.400</span><br>
+            📈 +18% vs semana passada<br>
+            👥 32 atendimentos (5 novos)<br>
+            ⚠️ 2 inadimplentes (R$ 800)<br><br>
+            📌 <strong>Ação:</strong> Cobrar Maria e João antes de quinta.
+            <div class="wpp-time">08:00 ✓✓</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="compare-table">
+      <table>
+        <thead>
+          <tr><th>ChatGPT</th><th>Seu Agente de IA</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Você vai até ele</td><td>Ele vem até você</td></tr>
+          <tr><td>Esquece tudo</td><td>Lembra de você</td></tr>
+          <tr><td>Só responde</td><td>Age proativamente</td></tr>
+          <tr><td>Genérico</td><td>100% personalizado</td></tr>
+          <tr><td>Precisa de prompt</td><td>Manda briefing sozinho</td></tr>
+          <tr><td>Só texto</td><td>Entende áudios</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<hr class="divisor">
+
+<!-- STORYTELLING -->
+<section class="section">
+  <div class="section-label">A história</div>
+  <h2>Eu criei meu próprio<br>agente de IA.</h2>
+  <div class="story-block">
+    <p>"Ele me manda mensagem todo dia às 8h. Entende meus áudios. Lembra de tudo que eu pedi. Pesquisa coisas pra mim na internet. Me avisa quando algo precisa de atenção."</p>
+    <p>"E custa menos que um almoço por dia pra manter."</p>
+  </div>
+  <div class="section-text">
+    <p>Demorei semanas testando. Errando. Quebrando coisas. Recomeçando.</p>
+    <p><strong>Documentei cada passo. Cada erro. Cada solução.</strong></p>
+    <p>Pra que você não precise descobrir sozinho.</p>
+    <p>O resultado: um guia de 14 módulos, 43 páginas, com passo a passo visual. Do zero ao agente funcionando no seu WhatsApp. Em aproximadamente 1 hora.</p>
+  </div>
+</section>
+
+<hr class="divisor">
+
+<!-- O QUE VEM NO GUIA -->
+<section class="section">
+  <div class="section-label">O que vem no guia</div>
+  <h2>14 módulos. Tudo que<br>você precisa.</h2>
+  <div class="guia-cards">
+    <div class="guia-card">
+      <div class="guia-card-emoji">📚</div>
+      <h3>14 Módulos</h3>
+      <p>Passo a passo visual do zero ao agente. Cada etapa com screenshots, explicações e comandos prontos pra copiar e colar.</p>
+    </div>
+    <div class="guia-card">
+      <div class="guia-card-emoji">📋</div>
+      <h3>Templates Prontos</h3>
+      <p>4 templates pra usar imediatamente: briefing matinal, assistente pessoal, resumo de notícias e consultor de negócios.</p>
+    </div>
+    <div class="guia-card">
+      <div class="guia-card-emoji">🔧</div>
+      <h3>Troubleshooting</h3>
+      <p>Deu erro? Tem Q&A completo + resolução dos problemas mais comuns. Você não fica travado em nenhuma etapa.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="divisor">
+
+<!-- COMO FUNCIONA -->
+<section class="section">
+  <div class="section-label">Como funciona</div>
+  <h2>3 passos. ~1 hora.<br>Zero código.</h2>
+  <p class="section-text" style="margin-bottom:40px">Sério. Você não precisa saber programar. É copiar e colar.</p>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">01</div>
+      <h3>Crie um servidor</h3>
+      <p>Na Hostinger, em 5 cliques. O guia mostra exatamente onde clicar, com screenshots de cada tela.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">02</div>
+      <h3>Instale o OpenClaw</h3>
+      <p>Copie e cole 3 comandos. Só isso. O guia tem os comandos prontos — é só dar Ctrl+C, Ctrl+V.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">03</div>
+      <h3>Conecte ao WhatsApp</h3>
+      <p>Escaneie o QR Code com seu celular. Pronto. Seu agente de IA tá no ar, mandando mensagens pra você.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="divisor">
+
+<!-- CAPACIDADES -->
+<section class="section">
+  <div class="section-label">Capacidades</div>
+  <h2>O que seu agente<br>de IA consegue fazer.</h2>
+  <div class="diffs">
+    <div class="diff">
+      <div class="diff-icon">📲</div>
+      <div>
+        <h3>Briefing Matinal</h3>
+        <p>Todo dia às 8h no WhatsApp. Agenda, emails, clima, lembretes — tudo organizado antes do café.</p>
+      </div>
+    </div>
+    <div class="diff">
+      <div class="diff-icon">🎤</div>
+      <div>
+        <h3>Entende Áudios</h3>
+        <p>Manda um áudio de 3 minutos e ele transcreve, entende e responde. Como falar com um assistente de verdade.</p>
+      </div>
+    </div>
+    <div class="diff">
+      <div class="diff-icon">🧠</div>
+      <div>
+        <h3>Memória Permanente</h3>
+        <p>Lembra do seu nome, do que você pediu semana passada, das suas preferências.</p>
+      </div>
+    </div>
+    <div class="diff">
+      <div class="diff-icon">🔍</div>
+      <div>
+        <h3>Pesquisa na Internet</h3>
+        <p>Pergunta qualquer coisa e ele busca, filtra e resume. Notícias, preços, concorrentes — em segundos.</p>
+      </div>
+    </div>
+    <div class="diff">
+      <div class="diff-icon">⚡</div>
+      <div>
+        <h3>Alertas em Tempo Real</h3>
+        <p>Algo precisa da sua atenção? Ele avisa na hora. Proativo de verdade.</p>
+      </div>
+    </div>
+    <div class="diff">
+      <div class="diff-icon">🎭</div>
+      <div>
+        <h3>Personalidade Única</h3>
+        <p>Você escolhe como ele fala. Formal, informal, engraçado, direto. É o seu agente — com a sua cara.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divisor">
+
+<!-- FAQ -->
+<section class="section">
+  <div class="section-label">Perguntas frequentes</div>
+  <h2>"Mas será que funciona<br>pra mim?"</h2>
+  <div class="objecoes">
+    <div class="objecao">
+      <div class="objecao-q">❓ Não sei programar</div>
+      <div class="objecao-a">Zero código. São comandos prontos pra copiar e colar. Se você sabe usar Ctrl+C e Ctrl+V, sabe seguir o guia.</div>
+    </div>
+    <div class="objecao">
+      <div class="objecao-q">❓ Demora muito?</div>
+      <div class="objecao-a">~1 hora. Tem gente que fez em 40 minutos seguindo o passo a passo.</div>
+    </div>
+    <div class="objecao">
+      <div class="objecao-q">❓ E se não funcionar?</div>
+      <div class="objecao-a">7 dias de garantia total. Não gostou? 100% do dinheiro de volta. Sem perguntas.</div>
+    </div>
+    <div class="objecao">
+      <div class="objecao-q">❓ Funciona no WhatsApp?</div>
+      <div class="objecao-a">WhatsApp e Telegram. No celular que você já usa. Não precisa instalar nenhum app novo.</div>
+    </div>
+  </div>
+</section>
+
+<hr class="divisor">
+
+<!-- PREÇO -->
+<div class="preco-bg">
+  <div class="preco-inner">
+    <div class="section-label" style="text-align:center">Oferta de lançamento</div>
+    <span class="urgencia-tag">🔥 Preço de lançamento · Depois volta pra R$ 397</span>
+    <h2 style="text-align:center;margin-bottom:32px">Tudo isso por menos<br>que um almoço.</h2>
+
+    <div class="stack-list">
+      <div class="stack-item"><span class="stack-item-name">14 Módulos passo a passo</span><span class="stack-item-valor">R$ 147</span></div>
+      <div class="stack-item"><span class="stack-item-name">4 Templates prontos</span><span class="stack-item-valor">R$ 97</span></div>
+      <div class="stack-item"><span class="stack-item-name">Troubleshooting Q&A</span><span class="stack-item-valor">R$ 67</span></div>
+      <div class="stack-item"><span class="stack-item-name">Guias de áudio e briefing</span><span class="stack-item-valor">R$ 47</span></div>
+      <div class="stack-item"><span class="stack-item-name">Atualizações futuras grátis</span><span class="stack-item-valor">R$ 39</span></div>
+      <div class="stack-total"><span>Total empilhado</span><span>R$ 397</span></div>
+    </div>
+
+    <div class="preco-riscado">De R$ 397</div>
+    <div class="preco-valor">R$ 197</div>
+    <div class="preco-parcela">ou 12x de R$ 20,37</div>
+
+    <a href="https://pay.hotmart.com/H105208897G" target="_blank" class="preco-cta">
+      QUERO CRIAR MEU AGENTE DE IA →
+    </a>
+
+    <div class="preco-selos">
+      <div class="preco-selo">🔒 7 dias de garantia</div>
+      <div class="preco-selo">⚡ Acesso imediato</div>
+      <div class="preco-selo">📄 PDF interativo</div>
+    </div>
+
+    <div style="border-top:1px solid var(--borda);padding-top:20px;font-size:12px;color:var(--fraco);line-height:1.6;text-align:center">
+      Processado com segurança pela Hotmart · Compra 100% segura
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <a href="/" class="footer-logo">PULSO</a>
+  <div class="footer-copy">&copy; 2026 PULSO</div>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.style.animation = 'fadeUp 0.6s ease both';
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.step, .guia-card, .diff, .objecao, .story-block').forEach(el => {
+    el.style.opacity = '0';
+    observer.observe(el);
+  });
+</script>
+</body>
+</html>
