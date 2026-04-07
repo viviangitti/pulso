@@ -641,9 +641,53 @@
   </div>
 </div>
 
+<!-- SEPARADOR PULSO -->
+<div class="pulso-divider">· · · em breve · · ·</div>
+
+<hr class="divisor">
+
+<!-- PULSO — LISTA DE ESPERA -->
+<section class="pulso-section" id="pulso" aria-label="PULSO — Lista de espera para agente de IA automatizado">
+  <div style="text-align:center">
+    <div class="section-label" style="text-align:center">Em breve</div>
+    <h2 style="text-align:center">Em breve: <em style="color:var(--verde)">PULSO</em></h2>
+    <p style="font-size:17px;line-height:1.75;color:var(--medio);max-width:560px;margin:0 auto 20px">O pulso da sua empresa, todo dia às 8h com IA no seu WhatsApp. Faturamento, agenda, inadimplência — tudo automatizado.</p>
+    <p style="font-size:15px;line-height:1.75;color:var(--fraco);max-width:520px;margin:0 auto 40px">Não quer criar do zero? O PULSO é seu agente de IA já configurado, conectado ao seu negócio. Sem servidor. Sem terminal.</p>
+  </div>
+
+  <div class="form-card" id="form-container">
+    <label class="form-label" for="input-nome">Seu nome</label>
+    <input class="form-input" type="text" id="input-nome" placeholder="Como quer ser chamado?">
+
+    <label class="form-label" for="input-wpp">WhatsApp</label>
+    <input class="form-input" type="tel" id="input-wpp" placeholder="(11) 99999-9999">
+
+    <label class="form-label" for="input-tipo">Tipo de negócio</label>
+    <select class="form-select" id="input-tipo">
+      <option value="">Selecione...</option>
+      <option value="clinica">Clínica</option>
+      <option value="loja">Loja</option>
+      <option value="franquia">Franquia</option>
+      <option value="farmacia">Farmácia</option>
+      <option value="agencia">Agência</option>
+      <option value="outro">Outro</option>
+    </select>
+
+    <button class="btn-submit" onclick="enviarLead()">Entrar na lista de espera</button>
+    <p class="form-priv">Sem compromisso. Avisamos quando estiver disponível.</p>
+  </div>
+
+  <div class="success-msg" id="success">
+    <div class="success-icon">🎉</div>
+    <div class="success-title">Você tá na lista!</div>
+    <div class="success-sub">Avisamos no seu WhatsApp quando o PULSO estiver disponível.</div>
+  </div>
+</section>
+
 <!-- OUTROS PRODUTOS -->
+<hr class="divisor">
 <div class="preco-bg">
-  <div class="preco-inner">
+  <div class="preco-inner" style="max-width:860px">
     <div class="section-label" style="text-align:center">Nossos Guias</div>
     <h2 style="text-align:center;margin-bottom:48px">Mais guias para<br>turbinar seu <em>negócio</em></h2>
 
@@ -694,51 +738,6 @@
     </div>
   </div>
 </div>
-
-<hr class="divisor">
-
-<!-- SEPARADOR PULSO -->
-<div class="pulso-divider">· · · em breve · · ·</div>
-
-<hr class="divisor">
-
-<!-- PULSO — LISTA DE ESPERA -->
-<section class="pulso-section" id="pulso" aria-label="PULSO — Lista de espera para agente de IA automatizado">
-  <div style="text-align:center">
-    <div class="section-label" style="text-align:center">Em breve</div>
-    <h2 style="text-align:center">Em breve: <em style="color:var(--verde)">PULSO</em></h2>
-    <p style="font-size:17px;line-height:1.75;color:var(--medio);max-width:560px;margin:0 auto 20px">O pulso da sua empresa, todo dia às 8h com IA no seu WhatsApp. Faturamento, agenda, inadimplência — tudo automatizado.</p>
-    <p style="font-size:15px;line-height:1.75;color:var(--fraco);max-width:520px;margin:0 auto 40px">Não quer criar do zero? O PULSO é seu agente de IA já configurado, conectado ao seu negócio. Sem servidor. Sem terminal.</p>
-  </div>
-
-  <div class="form-card" id="form-container">
-    <label class="form-label" for="input-nome">Seu nome</label>
-    <input class="form-input" type="text" id="input-nome" placeholder="Como quer ser chamado?">
-
-    <label class="form-label" for="input-wpp">WhatsApp</label>
-    <input class="form-input" type="tel" id="input-wpp" placeholder="(11) 99999-9999">
-
-    <label class="form-label" for="input-tipo">Tipo de negócio</label>
-    <select class="form-select" id="input-tipo">
-      <option value="">Selecione...</option>
-      <option value="clinica">Clínica</option>
-      <option value="loja">Loja</option>
-      <option value="franquia">Franquia</option>
-      <option value="farmacia">Farmácia</option>
-      <option value="agencia">Agência</option>
-      <option value="outro">Outro</option>
-    </select>
-
-    <button class="btn-submit" onclick="enviarLead()">Entrar na lista de espera</button>
-    <p class="form-priv">Sem compromisso. Avisamos quando estiver disponível.</p>
-  </div>
-
-  <div class="success-msg" id="success">
-    <div class="success-icon">🎉</div>
-    <div class="success-title">Você tá na lista!</div>
-    <div class="success-sub">Avisamos no seu WhatsApp quando o PULSO estiver disponível.</div>
-  </div>
-</section>
 
 <!-- FOOTER -->
 <footer>
