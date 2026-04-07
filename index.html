@@ -126,7 +126,31 @@
 
   .btn-primary { background: var(--verde); color: #000; border: none; padding: 18px 40px; border-radius: 100px; font-family: 'DM Sans', sans-serif; font-weight: 800; font-size: 17px; cursor: pointer; text-decoration: none; display: inline-block; transition: all 0.2s; animation: fadeUp 0.6s 0.3s ease both; }
   .btn-primary:hover { background: #07e89d; transform: translateY(-2px); box-shadow: 0 12px 32px rgba(5,201,138,0.28); }
-  .hero-nota { font-size: 13px; color: var(--fraco); margin-top: 14px; animation: fadeUp 0.6s 0.4s ease both; }
+  .hero-preco { margin-bottom: 24px; animation: fadeUp 0.6s 0.25s ease both; }
+  .hero-preco-de { font-size: 16px; color: var(--fraco); text-decoration: line-through; margin-right: 12px; }
+  .hero-preco-por { font-size: 22px; color: var(--branco); }
+  .hero-preco-por strong { color: var(--verde); font-size: 28px; }
+  .hero-garantia { font-size: 13px; color: var(--verde); margin-top: 14px; animation: fadeUp 0.6s 0.4s ease both; font-weight: 600; }
+
+  /* PREVIEW */
+  .preview-section { text-align: center; }
+  .preview-mockup { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 32px; }
+  .preview-page { background: var(--branco); border-radius: 8px; width: 180px; height: 240px; box-shadow: 0 20px 60px rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; flex-direction: column; padding: 20px; transition: transform 0.3s; }
+  .preview-page:hover { transform: translateY(-4px); }
+  .preview-page-icon { font-size: 32px; margin-bottom: 12px; }
+  .preview-page-title { font-size: 11px; font-weight: 700; color: #333; text-align: center; line-height: 1.4; }
+  .preview-page-sub { font-size: 9px; color: #888; margin-top: 6px; }
+
+  /* COMPARE TABLE */
+  .compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; max-width: 640px; margin: 32px auto 0; border-radius: 16px; overflow: hidden; border: 1px solid var(--borda); }
+  .compare-col { padding: 0; }
+  .compare-header { padding: 16px 20px; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; text-align: center; }
+  .compare-header.sem { background: #1a1a1a; color: var(--fraco); }
+  .compare-header.com { background: rgba(5,201,138,0.15); color: var(--verde); }
+  .compare-row { display: flex; }
+  .compare-cell { flex: 1; padding: 14px 20px; font-size: 14px; border-bottom: 1px solid #141414; }
+  .compare-cell.sem { color: var(--fraco); background: #0d0d0d; }
+  .compare-cell.com { color: var(--texto); background: rgba(5,201,138,0.04); font-weight: 600; }
 
   /* SECTIONS */
   .section { padding: 80px 48px; max-width: 860px; margin: 0 auto; }
@@ -205,6 +229,9 @@
   @media (max-width: 768px) {
     nav { padding: 14px 20px; }
     .hero { padding: 100px 20px 60px; }
+    .preview-page { width: 140px; height: 190px; padding: 16px; }
+    .compare-grid { grid-template-columns: 1fr 1fr; }
+    .compare-cell { font-size: 12px; padding: 12px 14px; }
     .problema-grid { grid-template-columns: 1fr; }
     .modulos { grid-template-columns: 1fr; }
     .para-quem-list { grid-template-columns: 1fr; }
@@ -229,12 +256,60 @@
 <section class="hero">
   <div class="hero-bg"></div>
   <div class="hero-content">
-    <div class="badge"><span class="badge-dot"></span> Manual Prático</div>
-    <div class="hero-emoji">📘</div>
-    <h1>IA <em>Descomplicada</em></h1>
-    <p class="hero-sub">O manual prático para pequenas e médias empresas que querem usar Inteligência Artificial para ganhar tempo, produtividade e resultado.</p>
-    <a href="https://pay.hotmart.com/R105242115M" target="_blank" class="btn-primary">QUERO MEU MANUAL · R$ 47</a>
-    <p class="hero-nota">ou 6x de R$ 8,95 · 7 dias de garantia · Acesso imediato</p>
+    <div class="badge"><span class="badge-dot"></span> Manual Prático · PDF</div>
+    <h1>Todo mundo já usa IA.<br><em>Menos você.</em></h1>
+    <p class="hero-sub">O manual prático que te ensina a usar Inteligência Artificial no seu negócio — mesmo que você nunca tenha criado um prompt na vida.</p>
+    <div class="hero-preco">
+      <span class="hero-preco-de">De R$ 97</span>
+      <span class="hero-preco-por">6x de <strong>R$ 8,82</strong></span>
+    </div>
+    <a href="https://pay.hotmart.com/R105242115M" target="_blank" class="btn-primary">QUERO MEU MANUAL →</a>
+    <p class="hero-garantia">🔒 7 dias de garantia · Não gostou? Dinheiro de volta.</p>
+  </div>
+</section>
+
+<hr class="divisor">
+
+<!-- O QUE VOCÊ RECEBE (preview) -->
+<section class="section preview-section">
+  <div class="section-label" style="text-align:center">O que você recebe</div>
+  <h2 style="text-align:center">Um manual direto ao ponto.<br>Sem enrolação.</h2>
+  <p class="section-text" style="max-width:520px;margin:0 auto 0;text-align:center">PDF prático com tudo que você precisa para começar a usar IA no seu negócio hoje.</p>
+  <div class="preview-mockup">
+    <div class="preview-page">
+      <div class="preview-page-icon">🎯</div>
+      <div class="preview-page-title">Prompts Prontos<br>para Copiar</div>
+      <div class="preview-page-sub">Templates testados</div>
+    </div>
+    <div class="preview-page">
+      <div class="preview-page-icon">📊</div>
+      <div class="preview-page-title">Análise de Dados<br>com IA</div>
+      <div class="preview-page-sub">Passo a passo visual</div>
+    </div>
+    <div class="preview-page">
+      <div class="preview-page-icon">⚡</div>
+      <div class="preview-page-title">Automação de<br>Tarefas</div>
+      <div class="preview-page-sub">Casos reais</div>
+    </div>
+  </div>
+</section>
+
+<hr class="divisor">
+
+<!-- COMPARATIVO -->
+<section class="section">
+  <div class="section-label">Antes vs Depois</div>
+  <h2>Sem o manual vs<br><em>Com</em> o manual.</h2>
+  <div class="compare-grid">
+    <div class="compare-header sem">Sem o manual</div>
+    <div class="compare-header com">Com o manual</div>
+  </div>
+  <div style="max-width:640px;margin:0 auto;border:1px solid var(--borda);border-top:none;border-radius:0 0 16px 16px;overflow:hidden">
+    <div class="compare-row"><div class="compare-cell sem">Usa IA no modo genérico</div><div class="compare-cell com">Prompts direcionados pro seu negócio</div></div>
+    <div class="compare-row"><div class="compare-cell sem">Perde horas em tarefas manuais</div><div class="compare-cell com">Automatiza o que repete</div></div>
+    <div class="compare-row"><div class="compare-cell sem">Não sabe analisar dados</div><div class="compare-cell com">IA analisa planilhas em segundos</div></div>
+    <div class="compare-row"><div class="compare-cell sem">Fica pra trás da concorrência</div><div class="compare-cell com">Usa IA como vantagem competitiva</div></div>
+    <div class="compare-row"><div class="compare-cell sem">Gasta com consultoria cara</div><div class="compare-cell com">Faz sozinho por 6x de R$ 8,82</div></div>
   </div>
 </section>
 
@@ -333,21 +408,22 @@
     <div class="section-label" style="text-align:center">Investimento</div>
     <h2 style="text-align:center;margin-bottom:32px">Menos que um almoço<br>para transformar seu negócio.</h2>
 
+    <div style="font-size:18px;color:var(--fraco);text-decoration:line-through;margin-bottom:4px">De R$ 97</div>
     <div class="preco-valor">R$ 47</div>
-    <div class="preco-parcela">ou 6x de R$ 8,95</div>
+    <div class="preco-parcela">ou <strong style="color:var(--verde);font-size:18px">6x de R$ 8,82</strong></div>
 
     <a href="https://pay.hotmart.com/R105242115M" target="_blank" class="preco-cta" aria-label="Comprar manual IA Descomplicada">
       QUERO MEU MANUAL →
     </a>
 
-    <div class="preco-selos">
-      <div class="preco-selo">🔒 7 dias de garantia</div>
-      <div class="preco-selo">⚡ Acesso imediato</div>
-      <div class="preco-selo">📄 PDF prático</div>
+    <div class="garantia-box" style="margin-top:16px;margin-bottom:20px">
+      <p><strong>🔒 Garantia incondicional de 7 dias.</strong><br>Não gostou? Devolvemos 100% do seu dinheiro. Sem perguntas, sem burocracia.</p>
     </div>
 
-    <div class="garantia-box">
-      <p><strong>🔒 Garantia incondicional de 7 dias.</strong><br>Se não gostar, devolvemos 100% do seu dinheiro. Sem perguntas.</p>
+    <div class="preco-selos">
+      <div class="preco-selo">⚡ Acesso imediato</div>
+      <div class="preco-selo">📄 PDF prático</div>
+      <div class="preco-selo">🔄 Atualizações grátis</div>
     </div>
 
     <div style="border-top:1px solid var(--borda);padding-top:20px;margin-top:24px;font-size:12px;color:var(--fraco);line-height:1.6;text-align:center">
@@ -470,7 +546,7 @@
       }
     });
   }, { threshold: 0.15 });
-  document.querySelectorAll('.problema-item, .modulo, .para-quem-item, .faq-item, .garantia-box').forEach(el => {
+  document.querySelectorAll('.problema-item, .modulo, .para-quem-item, .faq-item, .garantia-box, .preview-page, .compare-row').forEach(el => {
     el.style.opacity = '0';
     observer.observe(el);
   });
